@@ -345,7 +345,6 @@ public class Randomizer extends javax.swing.JFrame {
             }
         }
         //if(jComboBox1){}
-        ch2 = null;
         ch2 = new ChampionsTwo(jComboBox1);
         try {
             ch2.setWebGuidesFromComboBox();
@@ -370,7 +369,11 @@ public class Randomizer extends javax.swing.JFrame {
             "Tahm Kench", "Taliyah", "Talon", "Taric", "Teemo", "Thresh", "Tristana", "Trundle", "Tryndamere", "Twisted Fate", "Twitch", "Udyr",
             "Urgot", "Varus", "Vayne", "Veigar", "Vel'Koz", "Vi", "Viktor", "Vladimir", "Volibear", "Warwick", "Xerath", "Xin Zhao", "Yasuo",
             "Yorick", "Zac", "Zed", "Ziggs", "Zilean", "Zyra", "Camille", "Generate"};
-
+        for(int i = 0; i< names.length; i++){
+          if(jComboBox1.getSelectedIndex() < names.length){
+              ch = null;
+          }
+        }
         jLabel1.setText(names[jComboBox1.getSelectedIndex()]);
         ch2 = new ChampionsTwo(jComboBox1, jLabel3);
         ch2.setIconsFromComboBox();
