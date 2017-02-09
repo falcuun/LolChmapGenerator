@@ -71,6 +71,10 @@ public class Champions {
     public void setFourtyEightHundredChampions() {
         label.setText(names4800[r5]);
     }
+    
+    public int getRandom1(){
+      return this.r1;
+    }
     // Method that will change the name of jLabel after button click in main frame. Label will get a String value from one of the indexes in names6300[] String array
     public void setSixtyThreeHundredChampions() {
         label.setText(names6300[r6]);
