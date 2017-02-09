@@ -417,6 +417,7 @@ public class ChampionsTwo {
             case 133:
                 ii1 = new ImageIcon(getClass().getResource("/icons/Camille_Square_0.png"));
                 break;
+            case 134:  break;
         }
         label.setIcon(ii1);
     }

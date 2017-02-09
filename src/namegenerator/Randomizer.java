@@ -230,6 +230,7 @@ public class Randomizer extends javax.swing.JFrame {
     Champions ch;
     ChampionsTwo ch2;
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        jComboBox1.setSelectedIndex(134);
         // Makes an object of the Champion class (Class with all the Champion names)
         ch = new Champions(jLabel1, jLabel3);
         // Calls a method setChampions()(names) and setIcon() from "Champions" class for unfiltered generating
@@ -365,7 +366,7 @@ public class Randomizer extends javax.swing.JFrame {
             "Shaco", "Shen", "Shyvana", "Singed", "Sion", "Sivir", "Skarner", "Sona", "Soraka", "Swain", "Syndra",
             "Tahm Kench", "Taliyah", "Talon", "Taric", "Teemo", "Thresh", "Tristana", "Trundle", "Tryndamere", "Twisted Fate", "Twitch", "Udyr",
             "Urgot", "Varus", "Vayne", "Veigar", "Vel'Koz", "Vi", "Viktor", "Vladimir", "Volibear", "Warwick", "Xerath", "Xin Zhao", "Yasuo",
-            "Yorick", "Zac", "Zed", "Ziggs", "Zilean", "Zyra", "Camille"};
+            "Yorick", "Zac", "Zed", "Ziggs", "Zilean", "Zyra", "Camille", "Generate"};
 
         jLabel1.setText(names[jComboBox1.getSelectedIndex()]);
         ch2 = new ChampionsTwo(jComboBox1, jLabel3);
