@@ -153,7 +153,7 @@ public class Randomizer extends javax.swing.JFrame {
 
         jLabel5.setText("Sort by role");
 
-        jCheckBox7.setText("A⁠⁠assassins");
+        jCheckBox7.setText("Assassassins");
         jCheckBox7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox7ActionPerformed(evt);
@@ -161,6 +161,11 @@ public class Randomizer extends javax.swing.JFrame {
         });
 
         jCheckBox8.setText("Fighters");
+        jCheckBox8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox8ActionPerformed(evt);
+            }
+        });
 
         jCheckBox9.setText("Mages");
         jCheckBox9.addActionListener(new java.awt.event.ActionListener() {
@@ -170,10 +175,25 @@ public class Randomizer extends javax.swing.JFrame {
         });
 
         jCheckBox10.setText("Marksman");
+        jCheckBox10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox10ActionPerformed(evt);
+            }
+        });
 
         jCheckBox11.setText("Supports");
+        jCheckBox11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox11ActionPerformed(evt);
+            }
+        });
 
         jCheckBox12.setText("Tanks");
+        jCheckBox12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox12ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -203,7 +223,7 @@ public class Randomizer extends javax.swing.JFrame {
                                 .addGap(91, 91, 91))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jCheckBox7)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
                                 .addComponent(jButton1)
                                 .addGap(69, 69, 69))
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -296,10 +316,14 @@ public class Randomizer extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
     Champions ch;
     ChampionsTwo ch2;
+    Roles rl;
+    RolesComboBox rlcb;
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
         // Makes an object of the Champion class (Class with all the Champion names)
         ch = new Champions(jLabel1, jLabel3);
+
+        rl = new Roles(jLabel3);
         // Calls a method setChampions()(names) and setIcon() from "Champions" class for unfiltered generating
         if (jCheckBox6.isSelected()) {
             ch.setNoFilterChampion();
@@ -340,6 +364,36 @@ public class Randomizer extends javax.swing.JFrame {
             ch.setSixtyThreeHundredChampions();
             ch.setSixtyThreeHundredIcons();
             jComboBox1.setSelectedIndex(ch.getRandom6());
+        }
+        if (jCheckBox7.isSelected()) {
+            jLabel1.setText(rl.getAssassins());
+            rl.setAssassinsIcons();
+            jComboBox1.setSelectedIndex(rl.rA());
+        }
+        if (jCheckBox8.isSelected()) {
+            jLabel1.setText(rl.getFighters());
+            rl.setFightersIcons();
+            jComboBox1.setSelectedIndex(rl.rF());
+        }
+        if (jCheckBox9.isSelected()) {
+            jLabel1.setText(rl.getMages());
+            rl.setMagesIcons();
+            jComboBox1.setSelectedIndex(rl.rM());
+        }
+        if (jCheckBox10.isSelected()) {
+            jLabel1.setText(rl.getMarksman());
+            rl.setMarksmanIcons();
+            jComboBox1.setSelectedIndex(rl.rMa());
+        }
+        if (jCheckBox11.isSelected()) {
+            jLabel1.setText(rl.getSupports());
+            rl.setSupportsIcons();
+            jComboBox1.setSelectedIndex(rl.rS());
+        }
+        if (jCheckBox12.isSelected()) {
+            jLabel1.setText(rl.getTanks());
+            rl.setTanksIcons();
+            jComboBox1.setSelectedIndex(rl.rT());
         }
 
 
@@ -387,7 +441,7 @@ public class Randomizer extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBox6ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-
+       
         if (jCheckBox6.isSelected()) {
             try {
                 ch.openWebGuideNoFilter();
@@ -434,28 +488,90 @@ public class Randomizer extends javax.swing.JFrame {
                 //  Logger.getLogger(Randomizer.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-     
+        if (jCheckBox7.isSelected()) {
+            try {
+                rlcb.opnWebguideAssassins();
+            } catch (Exception ex) {
+                //  Logger.getLogger(Randomizer.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        if (jCheckBox8.isSelected()) {
+            try {
+                rlcb.openWebGuideFighters();
+            } catch (Exception ex) {
+                //  Logger.getLogger(Randomizer.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        if (jCheckBox9.isSelected()) {
+            try {
+                rlcb.openWebGuideMages();
+            } catch (Exception ex) {
+                //  Logger.getLogger(Randomizer.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        if (jCheckBox10.isSelected()) {
+            try {
+                rlcb.openWebGuideMarksman();
+            } catch (Exception ex) {
+                //  Logger.getLogger(Randomizer.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        if (jCheckBox11.isSelected()) {
+            try {
+                rlcb.openWebGuideSupports();
+            } catch (Exception ex) {
+                //  Logger.getLogger(Randomizer.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        if (jCheckBox12.isSelected()) {
+            try {
+                rlcb.openWebGuideTanks();
+            } catch (Exception ex) {
+                //  Logger.getLogger(Randomizer.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+
         ch2 = new ChampionsTwo(jComboBox1);
+        rlcb = new RolesComboBox(jComboBox1);
+        //Generating Guides from the Check Box selected Champion!
         try {
-            if(jCheckBox6.isSelected()){
-            ch2.setWebGuidesFromComboBox();
+            if (jCheckBox6.isSelected()) {
+                ch2.setWebGuidesFromComboBox();
             }
-            if(jCheckBox4.isSelected()){
-            ch2.openWebGuide450();
+            if (jCheckBox4.isSelected()) {
+                ch2.openWebGuide450();
             }
-            if(jCheckBox1.isSelected()){
-            ch2.openWebGuide1350();
+            if (jCheckBox1.isSelected()) {
+                ch2.openWebGuide1350();
             }
-            if(jCheckBox2.isSelected()){
-            ch2.openWebGuide3150();
+            if (jCheckBox2.isSelected()) {
+                ch2.openWebGuide3150();
             }
-            if(jCheckBox3.isSelected()){
-            ch2.openWebGuide6300();
+            if (jCheckBox3.isSelected()) {
+                ch2.openWebGuide6300();
             }
-            if(jCheckBox5.isSelected()){
-            ch2.openWebGuide4800();
+            if (jCheckBox5.isSelected()) {
+                ch2.openWebGuide4800();
             }
-                
+            if (jCheckBox7.isSelected()) {
+                rlcb.opnWebguideAssassins();
+            }
+            if (jCheckBox8.isSelected()) {
+                rlcb.openWebGuideFighters();
+            }
+            if (jCheckBox9.isSelected()) {
+                rlcb.openWebGuideMages();
+            }
+            if (jCheckBox10.isSelected()) {
+                rlcb.openWebGuideMarksman();
+            }
+            if (jCheckBox11.isSelected()) {
+                rlcb.openWebGuideSupports();
+            }
+            if (jCheckBox12.isSelected()) {
+                rlcb.openWebGuideTanks();
+            }
+
         } catch (Exception ex) {
             //  Logger.getLogger(Randomizer.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -489,12 +605,15 @@ public class Randomizer extends javax.swing.JFrame {
         String names6300[] = {"Aatrox", "Aurelion Sol", "Azir", "Bard", "Braum", "Camille", "Ekko", "Elise", "Gnar", "Illaoi", "Ivern", "Jhin", "Jinx", "Kalista", "Kha Zix", "Kindred",
             "Kled", "Lissandra", "Lucian", "Nami", "Quinn", "Rek Sai", "Rengar", "Syndra", "Tahm Kench", "Taliyah", "Thresh", "Vel Koz", "Vi", "Yasuo", "Zac", "Zed", "Select Champion...."};
 
-        for (int i = 0; i < names.length; i++) {
+        for (String name : names) {
             if (jComboBox1.getSelectedIndex() < names.length) {
                 ch = null;
             }
         }
+
         ch2 = new ChampionsTwo(jComboBox1, jLabel3);
+        rlcb = new RolesComboBox(jComboBox1, jLabel3);
+
         try {
             if (jCheckBox6.isSelected()) {
                 jLabel1.setText(names[jComboBox1.getSelectedIndex()]);
@@ -520,6 +639,38 @@ public class Randomizer extends javax.swing.JFrame {
                 jLabel1.setText(names4800[jComboBox1.getSelectedIndex()]);
                 ch2.setFourtyEightHundredIcons();
             }
+            if (jCheckBox6.isSelected()) {
+                jLabel1.setText(names[jComboBox1.getSelectedIndex()]);
+                ch2.setIconsFromComboBox();
+            }
+            if (jCheckBox4.isSelected()) {
+                jLabel1.setText(names450[jComboBox1.getSelectedIndex()]);
+                ch2.setFourFityIcons();
+            }
+            if (jCheckBox7.isSelected()) {
+                jLabel1.setText(rlcb.getAssassins());
+                rlcb.setAssassinsIcons();
+            }
+            if (jCheckBox8.isSelected()) {
+                jLabel1.setText(rlcb.getFighters());
+                rlcb.setFightersIcons();
+            }
+            if (jCheckBox9.isSelected()) {
+                jLabel1.setText(rlcb.getMages());
+                rlcb.setMagesIcons();
+            }
+            if (jCheckBox10.isSelected()) {
+                jLabel1.setText(rlcb.getMarksman());
+                rlcb.setMarksmanIcons();
+            }
+            if (jCheckBox11.isSelected()) {
+                jLabel1.setText(rlcb.getSupports());
+                rlcb.setSupportsIcons();
+            }
+            if (jCheckBox12.isSelected()) {
+                jLabel1.setText(rlcb.getTanks());
+                rlcb.setTanksIcons();
+            }
 
             //ch2.setIconsFromComboBox();
         } catch (NullPointerException npe) {
@@ -529,12 +680,40 @@ public class Randomizer extends javax.swing.JFrame {
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
     private void jCheckBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox7ActionPerformed
-        // TODO add your handling code here:
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"Akali", " Ekko", "Evelynn", "Fizz", "Kassadin", "Katarina", " KhaZix", "LeBlanc", "MasterYi", "Nidalee", "Nocturne", "Rengar", "Shaco", "Talon", "Zed", "Select Champion..."}));
+        jComboBox1.setSelectedItem("Select Champion...");
     }//GEN-LAST:event_jCheckBox7ActionPerformed
 
     private void jCheckBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox9ActionPerformed
-        // TODO add your handling code here:
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"Ahri", "Anivia", "Annie", "Aurelion Sol", "Azir", "Brand", "Cassiopeia", "Elise", "Fiddlesticks", "Heimerdinger", "Karma", "Karthus", "Kenne", "Lissandra", "Lux", "Malzahar", "Morgana", "Orianna", "Ryze", "Swain", "Syndra", "Taliyah", "Twisted Fate", "Veigar", "Vel'Koz", "Viktor", "Vladimir", "Xerath", "Ziggs", "Zyra", "Select Champion..."}));
+        jComboBox1.setSelectedItem("Select Champion...");
+
     }//GEN-LAST:event_jCheckBox9ActionPerformed
+
+    private void jCheckBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox8ActionPerformed
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"Aatrox", "Camille", "Darius", "Diana", "Dr. Mundo", "Fiora", "Gangplank", "Garen", "Gnar", "Gragas", "Hecarim", "Illaoi", "Irelia", "Jax", "Jayce", "Kayle", "Kled", "Lee Sin", "Wukong", "Mordekaiser", "Nasus", "Olaf", "Pantheon", "Rek'Sai", "Renekton", "Riven", "Rumble", "Shyvana", "Skarner", "Trundle", "Tryndamere", "Udyr", "Vi", "Volibear", "Warwick", "Xin Zhao", "Yasuo", "Yorick", "Select Champion..."}));
+        jComboBox1.setSelectedItem("Select Champion...");
+    }//GEN-LAST:event_jCheckBox8ActionPerformed
+
+    private void jCheckBox10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox10ActionPerformed
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"Ashe", "Caitlyn", "Corki", "Draven", "Ezreal", "Graves", "Jhin", "Jinx", "Kalista", "Kindred", "Kog'Maw", "Lucian", "Miss Fortune", "Quinn", "Sivir", "Teemo", "Tristana", "Twitch", "Urgot", "Varus", "Vayne", "Select Champion..."}));
+        jComboBox1.setSelectedItem("Select Champion...");
+    }//GEN-LAST:event_jCheckBox10ActionPerformed
+
+    private void jCheckBox11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox11ActionPerformed
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"Bard", "Braum", "Ivern", "Janna", "Lulu", "Nami", "Nunu", "Sona", "Soraka", "Tahm Kench", "Taric", "Thresh", "Zilean", "Select Champion..."}));
+        jComboBox1.setSelectedItem("Select Champion...");
+    }//GEN-LAST:event_jCheckBox11ActionPerformed
+
+    private void jCheckBox12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox12ActionPerformed
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"Alistar", "Amumu", "Blitzcrank", "Cho'Gath", "Galio", "JarvanIV", "Leona", "Malphite", "Maokai", "Nautilus", "Poppy", "Rammus", "Sejuani", "Shen", "Singed", "Sion", "Zac", "Select Champion..."}));
+        jComboBox1.setSelectedItem("Select Champion...");
+    }//GEN-LAST:event_jCheckBox12ActionPerformed
 
     /**
      * @param args the command line arguments

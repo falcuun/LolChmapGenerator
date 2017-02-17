@@ -81,7 +81,7 @@
                               </Group>
                               <Group type="102" attributes="0">
                                   <Component id="jCheckBox7" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="85" max="32767" attributes="0"/>
+                                  <EmptySpace pref="97" max="32767" attributes="0"/>
                                   <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
                               </Group>
@@ -426,7 +426,7 @@
         </Component>
         <Component class="javax.swing.JCheckBox" name="jCheckBox7">
           <Properties>
-            <Property name="text" type="java.lang.String" value="A&#x2060;&#x2060;assassins"/>
+            <Property name="text" type="java.lang.String" value="Assassassins"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox7ActionPerformed"/>
@@ -436,6 +436,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Fighters"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox8ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JCheckBox" name="jCheckBox9">
           <Properties>
@@ -449,16 +452,25 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Marksman"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox10ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JCheckBox" name="jCheckBox11">
           <Properties>
             <Property name="text" type="java.lang.String" value="Supports"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox11ActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JCheckBox" name="jCheckBox12">
           <Properties>
             <Property name="text" type="java.lang.String" value="Tanks"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox12ActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

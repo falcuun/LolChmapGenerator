@@ -30,7 +30,7 @@ public class Champions {
         "Yorick", "Zac", "Zed", "Ziggs", "Zilean", "Zyra", "Camille"};
  
     private final String names450[] = {"Amumu", "Annie", "Ashe", "Garen", "Kayle", "Master Yi", "Nunu", "Poppy", "Ryze", "Singed", "Sivir", "Soraka", "Warwick"};
-   private final String names1350[] = {"Alistar", "cho Gath", "Dr. Mundo", "Evelynn", "Fiddlesticks", "Janna", "Jax", "Malphite", "Morgana", "Nasus", "Rammus", "Sion", "Taric",
+    private final String names1350[] = {"Alistar", "cho Gath", "Dr. Mundo", "Evelynn", "Fiddlesticks", "Janna", "Jax", "Malphite", "Morgana", "Nasus", "Rammus", "Sion", "Taric",
         "Teemo", "Tristana", "Tryndamere", "Twisted Fate", "Udyr", "Veigar", "Xin Zhao", "Zilean"};
     private final String names3150[] = {"Akali", "Anivia", "Blitzcrank", "Corki", "Galio", "Gangplank", "Gragas", "Heimerdinger", "Karma", "Karthus", "Kassadin", "Katarina",
         "LeBlanc", "Lux", "Miss Fortune", "Mordekaiser", "Nidalee", "Olaf", "Pantheon", "Shaco", "Shen", "Shyvana", "Sona", "Twitch", "Urgot"};
