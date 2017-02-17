@@ -231,69 +231,93 @@ public class Randomizer extends javax.swing.JFrame {
     Champions ch;
     ChampionsTwo ch2;
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
+
         // Makes an object of the Champion class (Class with all the Champion names)
         ch = new Champions(jLabel1, jLabel3);
         // Calls a method setChampions()(names) and setIcon() from "Champions" class for unfiltered generating
         if (jCheckBox6.isSelected()) {
             ch.setNoFilterChampion();
             ch.setNoFilterIcon();
+            jComboBox1.setSelectedIndex(ch.getRandom1());
         }
         //If jCheckBox4 is thicked 
         // Calls a method setIcon() and setChampions()(Names) from "Champions" class for 450 Champions
         if (jCheckBox4.isSelected()) {
             ch.setFourFiftyChampions();
             ch.setFourFityIcons();
+            jComboBox1.setSelectedIndex(ch.getRandom2());
         }
         //If jCheckBox1 is thicked 
         // Calls a method setIcon() and setChampions()(Names) from class Champions for 1350 champions
         if (jCheckBox1.isSelected()) {
             ch.setThirteenFiftyChampions();
             ch.setThirteenFiftyIcons();
+            jComboBox1.setSelectedIndex(ch.getRandom3());
         }
         //If jCheckBox2 is thicked 
         // Calls a method setIcon() and setChampions()(Names) from class Champions for 1350 champions
         if (jCheckBox2.isSelected()) {
             ch.setThirtyOneFiftyChampions();
             ch.setThirtyOneFiftyIcons();
+            jComboBox1.setSelectedIndex(ch.getRandom4());
         }
         //If jCheckBox5 is thicked 
         // Calls a method setIcon() and setChampions()(Names) from class Champions for 1350 champions
         if (jCheckBox5.isSelected()) {
             ch.setFourtyEightHundredChampions();
             ch.setFourtyEightHundredIcons();
+            jComboBox1.setSelectedIndex(ch.getRandom5());
         }
         //If jCheckBox3 is thicked 
         //Calls a method setIcon() and setChampions()(Names) from class Champions for 1350 champions
         if (jCheckBox3.isSelected()) {
             ch.setSixtyThreeHundredChampions();
             ch.setSixtyThreeHundredIcons();
+            jComboBox1.setSelectedIndex(ch.getRandom6());
         }
-        jComboBox1.setSelectedIndex(ch.getRandom1());
+
+
     }//GEN-LAST:event_jButton1ActionPerformed
-
     private void jCheckBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox4ActionPerformed
-
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"Amumu", "Annie", "Ashe", "Garen", "Kayle", "Master Yi", "Nunu", "Poppy", "Ryze", "Singed", "Sivir", "Soraka", "Warwick", "Generate"}));
+        jComboBox1.setSelectedIndex(13);
     }//GEN-LAST:event_jCheckBox4ActionPerformed
-
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"Alistar", "cho Gath", "Dr. Mundo", "Evelynn", "Fiddlesticks", "Janna", "Jax", "Malphite", "Morgana", "Nasus", "Rammus", "Sion", "Taric",
+            "Teemo", "Tristana", "Tryndamere", "Twisted Fate", "Udyr", "Veigar", "Xin Zhao", "Zilean", "Generate"}));
 
+        jComboBox1.setSelectedIndex(21);
     }//GEN-LAST:event_jCheckBox1ActionPerformed
-
     private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
-
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"Akali", "Anivia", "Blitzcrank", "Corki", "Galio", "Gangplank", "Gragas", "Heimerdinger", "Karma", "Karthus", "Kassadin", "Katarina",
+            "LeBlanc", "Lux", "Miss Fortune", "Mordekaiser", "Nidalee", "Olaf", "Pantheon", "Shaco", "Shen", "Shyvana", "Sona", "Twitch", "Urgot", "Generate"}));
+        jComboBox1.setSelectedIndex(25);
     }//GEN-LAST:event_jCheckBox2ActionPerformed
-
     private void jCheckBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox5ActionPerformed
-
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"Ahri", "Brand", "Caitlyn", "Cassiopiea", "Darius", "Diana", "Draven", "Ezreal", "Fiora", "Fizz", "Graves", "Hecarim", "Ireali", "Jarvan IV",
+            "Jayce", "Kennen", "Kog Maw", "Lee Sin", "Leona", "Lulu", "Malzahar", "Maokai", "Nautilus", "Nocturne", "Orianna", "Renekton", "Riven", "Rumble", "Sejuani", "Skarner", "Swain", "Talon",
+            "Trundle", "Varus", "Vayne", "Viktor", "Vladimir", "Volibear", "Wukong", "Xerath", "Yorick", "Ziggs", "Zyra", "Generate"}));
+        jComboBox1.setSelectedIndex(43);
     }//GEN-LAST:event_jCheckBox5ActionPerformed
-
     private void jCheckBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox3ActionPerformed
-
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"Aatrox", "Aurelion Sol", "Azir", "Bard", "Braum", "Camille", "Ekko", "Elise", "Gnar", "Illaoi", "Ivern", "Jhin", "Jinx", "Kalista", "Kha Zix", "Kindred",
+            "Kled", "Lissandra", "Lucian", "Nami", "Quinn", "Rek Sai", "Rengar", "Syndra", "Tahm Kench", "Taliyah", "Thresh", "Vel Koz", "Vi", "Yasuo", "Zac", "Zed", "Generate"}));
+        jComboBox1.setSelectedIndex(32);
     }//GEN-LAST:event_jCheckBox3ActionPerformed
-
     private void jCheckBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox6ActionPerformed
-        // TODO add your handling code here:
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"Aatrox", "Ahri", "Akali", "Alistar", "Amumu", "Anivia", "Annie", "Ashe", "Aurelion Sol", "Azir",
+            "Bard", "Blitzcrank", "Brand", "Braum", "Caitlyn", "Cassiopeia", "Cho'Gath", "Corki", "Darius", "Diana",
+            "Dr.Mundo", "Draven", "Ekko", "Elise", "Evenlynn", "Ezreal", "Fiddlesticks", "Fiora", "Fizz", "Galio", "GangPlank", "Garen",
+            "Gnar", "Gragas", "Graves", "Hecarim", "Heimerdinger", "Illaoi", "Irelia", "Ivren", "Janna", "Jarvan IV",
+            "Jax", "Jayce", "Jhin", "Jinx", "Kalista", "Karma", "Karthus", "Kassadin", "Katarina", "Kayle", "Kennen", "Kha'Zix", "Kindred",
+            "Kled", "Kog'Maw", "LeBlanc", "Lee Sin", "Leona", "Lissandra", " Lucian", "Lulu", "Lux", "Malphite", "Malzahar", "Maokai",
+            "Master Yi", "Miss Fortune", "Wukong", "Mordekaiser", "Morgana", "Nami", "Nasus", "Nautilus", "Nidalee", "Nocturne", "Nunu", "Olaf",
+            "Orianna", "Pantheon", "Poppy", "Quinn", "Rammus", "Rek'Sai", "Renekton", "Rengar", "Riven", "Rumble", "Ryze", "Sejuani",
+            "Shaco", "Shen", "Shyvana", "Singed", "Sion", "Sivir", "Skarner", "Sona", "Soraka", "Swain", "Syndra",
+            "Tahm Kench", "Taliyah", "Talon", "Taric", "Teemo", "Thresh", "Tristana", "Trundle", "Tryndamere", "Twisted Fate", "Twitch", "Udyr",
+            "Urgot", "Varus", "Vayne", "Veigar", "Vel'Koz", "Vi", "Viktor", "Vladimir", "Volibear", "Warwick", "Xerath", "Xin Zhao", "Yasuo",
+            "Yorick", "Zac", "Zed", "Ziggs", "Zilean", "Zyra", "Camille", "Select Champion...."}));
+        jComboBox1.setSelectedIndex(134);
     }//GEN-LAST:event_jCheckBox6ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -344,14 +368,32 @@ public class Randomizer extends javax.swing.JFrame {
                 //  Logger.getLogger(Randomizer.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-        //if(jComboBox1){}
+     
         ch2 = new ChampionsTwo(jComboBox1);
         try {
+            if(jCheckBox6.isSelected()){
             ch2.setWebGuidesFromComboBox();
+            }
+            if(jCheckBox4.isSelected()){
+            ch2.openWebGuide450();
+            }
+            if(jCheckBox1.isSelected()){
+            ch2.openWebGuide1350();
+            }
+            if(jCheckBox2.isSelected()){
+            ch2.openWebGuide3150();
+            }
+            if(jCheckBox3.isSelected()){
+            ch2.openWebGuide6300();
+            }
+            if(jCheckBox5.isSelected()){
+            ch2.openWebGuide4800();
+            }
+                
         } catch (Exception ex) {
             //  Logger.getLogger(Randomizer.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+
 
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -368,15 +410,55 @@ public class Randomizer extends javax.swing.JFrame {
             "Shaco", "Shen", "Shyvana", "Singed", "Sion", "Sivir", "Skarner", "Sona", "Soraka", "Swain", "Syndra",
             "Tahm Kench", "Taliyah", "Talon", "Taric", "Teemo", "Thresh", "Tristana", "Trundle", "Tryndamere", "Twisted Fate", "Twitch", "Udyr",
             "Urgot", "Varus", "Vayne", "Veigar", "Vel'Koz", "Vi", "Viktor", "Vladimir", "Volibear", "Warwick", "Xerath", "Xin Zhao", "Yasuo",
-            "Yorick", "Zac", "Zed", "Ziggs", "Zilean", "Zyra", "Camille", "Generate"};
-        for(int i = 0; i< names.length; i++){
-          if(jComboBox1.getSelectedIndex() < names.length){
-              ch = null;
-          }
+            "Yorick", "Zac", "Zed", "Ziggs", "Zilean", "Zyra", "Camille", "Select Champion...."};
+
+        String names450[] = {"Amumu", "Annie", "Ashe", "Garen", "Kayle", "Master Yi", "Nunu", "Poppy", "Ryze", "Singed", "Sivir", "Soraka", "Warwick", "Generate"};
+        String names1350[] = {"Alistar", "cho Gath", "Dr. Mundo", "Evelynn", "Fiddlesticks", "Janna", "Jax", "Malphite", "Morgana", "Nasus", "Rammus", "Sion", "Taric",
+            "Teemo", "Tristana", "Tryndamere", "Twisted Fate", "Udyr", "Veigar", "Xin Zhao", "Zilean", "Select Champion...."};
+        String names3150[] = {"Akali", "Anivia", "Blitzcrank", "Corki", "Galio", "Gangplank", "Gragas", "Heimerdinger", "Karma", "Karthus", "Kassadin", "Katarina",
+            "LeBlanc", "Lux", "Miss Fortune", "Mordekaiser", "Nidalee", "Olaf", "Pantheon", "Shaco", "Shen", "Shyvana", "Sona", "Twitch", "Urgot", "Select Champion...."};
+        String names4800[] = {"Ahri", "Brand", "Caitlyn", "Cassiopiea", "Darius", "Diana", "Draven", "Ezreal", "Fiora", "Fizz", "Graves", "Hecarim", "Ireali", "Jarvan IV",
+            "Jayce", "Kennen", "Kog Maw", "Lee Sin", "Leona", "Lulu", "Malzahar", "Maokai", "Nautilus", "Nocturne", "Orianna", "Renekton", "Riven", "Rumble", "Sejuani", "Skarner", "Swain", "Talon",
+            "Trundle", "Varus", "Vayne", "Viktor", "Vladimir", "Volibear", "Wukong", "Xerath", "Yorick", "Ziggs", "Zyra", "Select Champion...."};
+        String names6300[] = {"Aatrox", "Aurelion Sol", "Azir", "Bard", "Braum", "Camille", "Ekko", "Elise", "Gnar", "Illaoi", "Ivern", "Jhin", "Jinx", "Kalista", "Kha Zix", "Kindred",
+            "Kled", "Lissandra", "Lucian", "Nami", "Quinn", "Rek Sai", "Rengar", "Syndra", "Tahm Kench", "Taliyah", "Thresh", "Vel Koz", "Vi", "Yasuo", "Zac", "Zed", "Select Champion...."};
+
+        for (int i = 0; i < names.length; i++) {
+            if (jComboBox1.getSelectedIndex() < names.length) {
+                ch = null;
+            }
         }
-        jLabel1.setText(names[jComboBox1.getSelectedIndex()]);
         ch2 = new ChampionsTwo(jComboBox1, jLabel3);
-        ch2.setIconsFromComboBox();
+        try {
+            if (jCheckBox6.isSelected()) {
+                jLabel1.setText(names[jComboBox1.getSelectedIndex()]);
+                ch2.setIconsFromComboBox();
+            }
+            if (jCheckBox4.isSelected()) {
+                jLabel1.setText(names450[jComboBox1.getSelectedIndex()]);
+                ch2.setFourFityIcons();
+            }
+            if (jCheckBox1.isSelected()) {
+                jLabel1.setText(names1350[jComboBox1.getSelectedIndex()]);
+                ch2.setThirteenFiftyIcons();
+            }
+            if (jCheckBox2.isSelected()) {
+                jLabel1.setText(names3150[jComboBox1.getSelectedIndex()]);
+                ch2.setThirtyOneFiftyIcons();
+            }
+            if (jCheckBox3.isSelected()) {
+                jLabel1.setText(names6300[jComboBox1.getSelectedIndex()]);
+                ch2.setSixtyThreeHundredIcons();
+            }
+            if (jCheckBox5.isSelected()) {
+                jLabel1.setText(names4800[jComboBox1.getSelectedIndex()]);
+                ch2.setFourtyEightHundredIcons();
+            }
+
+            //ch2.setIconsFromComboBox();
+        } catch (NullPointerException npe) {
+
+        }
 
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
@@ -394,16 +476,24 @@ public class Randomizer extends javax.swing.JFrame {
                 if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
+
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Randomizer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Randomizer.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Randomizer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Randomizer.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Randomizer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Randomizer.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Randomizer.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Randomizer.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 

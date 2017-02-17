@@ -28,9 +28,9 @@ public class Champions {
         "Tahm Kench", "Taliyah", "Talon", "Taric", "Teemo", "Thresh", "Tristana", "Trundle", "Tryndamere", "Twisted Fate", "Twitch", "Udyr",
         "Urgot", "Varus", "Vayne", "Veigar", "Vel'Koz", "Vi", "Viktor", "Vladimir", "Volibear", "Warwick", "Xerath", "Xin Zhao", "Yasuo",
         "Yorick", "Zac", "Zed", "Ziggs", "Zilean", "Zyra", "Camille"};
-
+ 
     private final String names450[] = {"Amumu", "Annie", "Ashe", "Garen", "Kayle", "Master Yi", "Nunu", "Poppy", "Ryze", "Singed", "Sivir", "Soraka", "Warwick"};
-    private final String names1350[] = {"Alistar", "cho Gath", "Dr. Mundo", "Evelynn", "Fiddlesticks", "Janna", "Jax", "Malphite", "Morgana", "Nasus", "Rammus", "Sion", "Taric",
+   private final String names1350[] = {"Alistar", "cho Gath", "Dr. Mundo", "Evelynn", "Fiddlesticks", "Janna", "Jax", "Malphite", "Morgana", "Nasus", "Rammus", "Sion", "Taric",
         "Teemo", "Tristana", "Tryndamere", "Twisted Fate", "Udyr", "Veigar", "Xin Zhao", "Zilean"};
     private final String names3150[] = {"Akali", "Anivia", "Blitzcrank", "Corki", "Galio", "Gangplank", "Gragas", "Heimerdinger", "Karma", "Karthus", "Kassadin", "Katarina",
         "LeBlanc", "Lux", "Miss Fortune", "Mordekaiser", "Nidalee", "Olaf", "Pantheon", "Shaco", "Shen", "Shyvana", "Sona", "Twitch", "Urgot"};
@@ -71,9 +71,25 @@ public class Champions {
     public void setFourtyEightHundredChampions() {
         label.setText(names4800[r5]);
     }
+ 
     
     public int getRandom1(){
       return this.r1;
+    }
+    public int getRandom2(){
+        return this.r2;
+    }
+    public int getRandom3(){
+        return this.r3;
+    }
+    public int getRandom4(){
+        return this.r4;
+    }
+    public int getRandom5(){
+        return this.r5;
+    }
+    public int getRandom6(){
+        return this.r6;
     }
     // Method that will change the name of jLabel after button click in main frame. Label will get a String value from one of the indexes in names6300[] String array
     public void setSixtyThreeHundredChampions() {
@@ -507,7 +523,7 @@ public class Champions {
                 ii = new ImageIcon(getClass().getResource("/icons/Soraka_Square_0.png"));
                 break;
             case 12:
-                ii = new ImageIcon(getClass().getResource("/icons/warwick_Square_0.png"));
+                ii = new ImageIcon(getClass().getResource("/icons/Warwick_Square_0.png"));
                 break;
         }
         label1.setIcon(ii);
