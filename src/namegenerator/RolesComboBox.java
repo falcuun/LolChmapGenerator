@@ -6,9 +6,7 @@
 package namegenerator;
 
 import java.awt.Desktop;
-import java.io.IOException;
 import java.net.URI;
-import java.net.URISyntaxException;
 import javax.swing.ImageIcon;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
@@ -24,25 +22,7 @@ public class RolesComboBox {
     ImageIcon ii;
     Desktop dt = Desktop.getDesktop();
     
-    private static String[] names = {"Aatrox", "Ahri", "Akali", "Alistar", "Amumu", "Anivia", "Annie", "Ashe", "Aurelion Sol", "Azir",
-            "Bard", "Blitzcrank", "Brand", "Braum", "Caitlyn", "Cassiopeia", "Cho'Gath", "Corki", "Darius", "Diana",
-            "Dr.Mundo", "Draven", "Ekko", "Elise", "Evenlynn", "Ezreal", "Fiddlesticks", "Fiora", "Fizz", "Galio", "GangPlank", "Garen",
-            "Gnar", "Gragas", "Graves", "Hecarim", "Heimerdinger", "Illaoi", "Irelia", "Ivren", "Janna", "Jarvan IV",
-            "Jax", "Jayce", "Jhin", "Jinx", "Kalista", "Karma", "Karthus", "Kassadin", "Katarina", "Kayle", "Kennen", "Kha'Zix", "Kindred",
-            "Kled", "Kog'Maw", "LeBlanc", "Lee Sin", "Leona", "Lissandra", " Lucian", "Lulu", "Lux", "Malphite", "Malzahar", "Maokai",
-            "Master Yi", "Miss Fortune", "Wukong", "Mordekaiser", "Morgana", "Nami", "Nasus", "Nautilus", "Nidalee", "Nocturne", "Nunu", "Olaf",
-            "Orianna", "Pantheon", "Poppy", "Quinn", "Rammus", "Rek'Sai", "Renekton", "Rengar", "Riven", "Rumble", "Ryze", "Sejuani",
-            "Shaco", "Shen", "Shyvana", "Singed", "Sion", "Sivir", "Skarner", "Sona", "Soraka", "Swain", "Syndra",
-            "Tahm Kench", "Taliyah", "Talon", "Taric", "Teemo", "Thresh", "Tristana", "Trundle", "Tryndamere", "Twisted Fate", "Twitch", "Udyr",
-            "Urgot", "Varus", "Vayne", "Veigar", "Vel'Koz", "Vi", "Viktor", "Vladimir", "Volibear", "Warwick", "Xerath", "Xin Zhao", "Yasuo",
-            "Yorick", "Zac", "Zed", "Ziggs", "Zilean", "Zyra", "Camille", "Select Champion...."};
 
-    private static String assassins[] = {"Akali", " Ekko", "Evelynn", "Fizz", "Kassadin", "Katarina", " KhaZix", "LeBlanc", "MasterYi", "Nidalee", "Nocturne", "Rengar", "Shaco", "Talon", "Zed", "Select Champion..."};
-    private static String fighters[] = {"Aatrox", "Camille", "Darius", "Diana", "Dr. Mundo", "Fiora", "Gangplank", "Garen", "Gnar", "Gragas", "Hecarim", "Illaoi", "Irelia", "Jax", "Jayce", "Kayle", "Kled", "Lee Sin", "Wukong", "Mordekaiser", "Nasus", "Olaf", "Pantheon", "Rek'Sai", "Renekton", "Riven", "Rumble", "Shyvana", "Skarner", "Trundle", "Tryndamere", "Udyr", "Vi", "Volibear", "Warwick", "Xin Zhao", "Yasuo", "Yorick", "Select Champion..."};
-    private static String tank[] = {"Alistar", "Amumu", "Blitzcrank", "Cho'Gath", "Galio", "JarvanIV", "Leona", "Malphite", "Maokai", "Nautilus", "Poppy", "Rammus", "Sejuani", "Shen", "Singed", "Sion", "Zac", "Select Champion..."};
-    private static String mages[] = {"Ahri", "Anivia", "Annie", "Aurelion Sol", "Azir", "Brand", "Cassiopeia", "Elise", "Fiddlesticks", "Heimerdinger", "Karma", "Karthus", "Kenne", "Lissandra", "Lux", "Malzahar", "Morgana", "Orianna", "Ryze", "Swain", "Syndra", "Taliyah", "Twisted Fate", "Veigar", "Vel'Koz", "Viktor", "Vladimir", "Xerath", "Ziggs", "Zyra", "Select Champion..."};
-    private static String supports[] = {"Bard", "Braum", "Ivern", "Janna", "Lulu", "Nami", "Nunu", "Sona", "Soraka", "Tahm Kench", "Taric", "Thresh", "Zilean", "Select Champion..."};
-    private static String marksman[] = {"Ashe", "Caitlyn", "Corki", "Draven", "Ezreal", "Graves", "Jhin", "Jinx", "Kalista", "Kindred", "Kog'Maw", "Lucian", "Miss Fortune", "Quinn", "Sivir", "Teemo", "Tristana", "Twitch", "Urgot", "Varus", "Vayne", "Select Champion..."};
 
     public void setAssassinsIcons() {
         switch (comboBox.getSelectedIndex()) {
@@ -119,7 +99,7 @@ public class RolesComboBox {
                 dt.browse(new URI("http://www.mobafire.com/league-of-legends/katarina-guide"));
                 break;
             case 6:
-                dt.browse(new URI("http://www.mobafire.com/league-of-legends/kha-zix-guide"));
+                dt.browse(new URI("http://www.mobafire.com/league-of-legends/khazix-guide"));
                 break;
             case 7:
                 dt.browse(new URI("http://www.mobafire.com/league-of-legends/leblanc-guide"));
@@ -343,7 +323,7 @@ public class RolesComboBox {
                 dt.browse(new URI("http://www.mobafire.com/league-of-legends/pantheon-guide"));
                 break;
             case 23:
-                dt.browse(new URI("http://www.mobafire.com/league-of-legends/rek-sai-guide"));
+                dt.browse(new URI("http://www.mobafire.com/league-of-legends/reksai-guide"));
                 break;
             case 24:
                 dt.browse(new URI("http://www.mobafire.com/league-of-legends/renekton-guide"));
@@ -462,7 +442,7 @@ public class RolesComboBox {
                 dt.browse(new URI("http://www.mobafire.com/league-of-legends/blitzcrank-guide"));
                 break;
             case 3:
-                dt.browse(new URI("http://www.mobafire.com/league-of-legends/cho-gath-guide"));
+                dt.browse(new URI("http://www.mobafire.com/league-of-legends/chogath-guide"));
                 break;
             case 4:
                 dt.browse(new URI("http://www.mobafire.com/league-of-legends/galio-guide"));
@@ -617,7 +597,7 @@ public class RolesComboBox {
                 dt.browse(new URI("http://www.mobafire.com/league-of-legends/annie-guide"));
                 break;
             case 3:
-                dt.browse(new URI("http://www.mobafire.com/league-of-legends/aurolion-sol-guide"));
+                dt.browse(new URI("http://www.mobafire.com/league-of-legends/aurelion-sol-guide"));
                 break;
             case 4:
                 dt.browse(new URI("http://www.mobafire.com/league-of-legends/azir-guide"));
@@ -680,7 +660,7 @@ public class RolesComboBox {
                 dt.browse(new URI("http://www.mobafire.com/league-of-legends/veigar-guide"));
                 break;
             case 24:
-                dt.browse(new URI("http://www.mobafire.com/league-of-legends/vel-koz-guide"));
+                dt.browse(new URI("http://www.mobafire.com/league-of-legends/velkoz-guide"));
                 break;
             case 25:
                 dt.browse(new URI("http://www.mobafire.com/league-of-legends/viktor-guide"));
@@ -898,7 +878,7 @@ public class RolesComboBox {
                 dt.browse(new URI("http://www.mobafire.com/league-of-legends/kindred-guide"));
                 break;
             case 10:
-                dt.browse(new URI("http://www.mobafire.com/league-of-legends/kog-maw-guide"));
+                dt.browse(new URI("http://www.mobafire.com/league-of-legends/kogmaw-guide"));
                 break;
             case 11:
                 dt.browse(new URI("http://www.mobafire.com/league-of-legends/lucian-guide"));
@@ -935,29 +915,6 @@ public class RolesComboBox {
         }
     }
 
-    public String getAssassins() {
-        return assassins[comboBox.getSelectedIndex()];
-    }
-
-    public String getFighters() {
-        return fighters[comboBox.getSelectedIndex()];
-    }
-
-    public String getTanks() {
-        return tank[comboBox.getSelectedIndex()];
-    }
-
-    public String getMages() {
-        return mages[comboBox.getSelectedIndex()];
-    }
-
-    public String getSupports() {
-        return supports[comboBox.getSelectedIndex()];
-    }
-
-    public String getMarksman() {
-        return marksman[comboBox.getSelectedIndex()];
-    }
 
     RolesComboBox(JComboBox jcb1) {
         this.comboBox = jcb1;

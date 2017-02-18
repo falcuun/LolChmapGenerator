@@ -441,7 +441,7 @@ public class Randomizer extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBox6ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-       
+
         if (jCheckBox6.isSelected()) {
             try {
                 ch.openWebGuideNoFilter();
@@ -490,42 +490,42 @@ public class Randomizer extends javax.swing.JFrame {
         }
         if (jCheckBox7.isSelected()) {
             try {
-                rlcb.opnWebguideAssassins();
+                rl.openWebGuideAssassins();
             } catch (Exception ex) {
                 //  Logger.getLogger(Randomizer.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         if (jCheckBox8.isSelected()) {
             try {
-                rlcb.openWebGuideFighters();
+                rl.openWebGuideFighters();
             } catch (Exception ex) {
                 //  Logger.getLogger(Randomizer.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         if (jCheckBox9.isSelected()) {
             try {
-                rlcb.openWebGuideMages();
+                rl.openWebGuideMages();
             } catch (Exception ex) {
                 //  Logger.getLogger(Randomizer.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         if (jCheckBox10.isSelected()) {
             try {
-                rlcb.openWebGuideMarksman();
+                rl.openWebGuideMarksman();
             } catch (Exception ex) {
                 //  Logger.getLogger(Randomizer.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         if (jCheckBox11.isSelected()) {
             try {
-                rlcb.openWebGuideSupports();
+                rl.openWebGuideSupports();
             } catch (Exception ex) {
                 //  Logger.getLogger(Randomizer.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
         if (jCheckBox12.isSelected()) {
             try {
-                rlcb.openWebGuideTanks();
+                rl.openWebGuideTanks();
             } catch (Exception ex) {
                 //  Logger.getLogger(Randomizer.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -604,10 +604,18 @@ public class Randomizer extends javax.swing.JFrame {
             "Trundle", "Varus", "Vayne", "Viktor", "Vladimir", "Volibear", "Wukong", "Xerath", "Yorick", "Ziggs", "Zyra", "Select Champion...."};
         String names6300[] = {"Aatrox", "Aurelion Sol", "Azir", "Bard", "Braum", "Camille", "Ekko", "Elise", "Gnar", "Illaoi", "Ivern", "Jhin", "Jinx", "Kalista", "Kha Zix", "Kindred",
             "Kled", "Lissandra", "Lucian", "Nami", "Quinn", "Rek Sai", "Rengar", "Syndra", "Tahm Kench", "Taliyah", "Thresh", "Vel Koz", "Vi", "Yasuo", "Zac", "Zed", "Select Champion...."};
+        String assassins[] = {"Akali", " Ekko", "Evelynn", "Fizz", "Kassadin", "Katarina", " KhaZix", "LeBlanc", "MasterYi", "Nidalee", "Nocturne", "Rengar", "Shaco", "Talon", "Zed", "Select Champion..."};
+        String fighters[] = {"Aatrox", "Camille", "Darius", "Diana", "Dr. Mundo", "Fiora", "Gangplank", "Garen", "Gnar", "Gragas", "Hecarim", "Illaoi", "Irelia", "Jax", "Jayce", "Kayle", "Kled", "Lee Sin", "Wukong", "Mordekaiser", "Nasus", "Olaf", "Pantheon", "Rek'Sai", "Renekton", "Riven", "Rumble", "Shyvana", "Skarner", "Trundle", "Tryndamere", "Udyr", "Vi", "Volibear", "Warwick", "Xin Zhao", "Yasuo", "Yorick", "Select Champion..."};
+        String tank[] = {"Alistar", "Amumu", "Blitzcrank", "Cho'Gath", "Galio", "JarvanIV", "Leona", "Malphite", "Maokai", "Nautilus", "Poppy", "Rammus", "Sejuani", "Shen", "Singed", "Sion", "Zac", "Select Champion..."};
+        String mages[] = {"Ahri", "Anivia", "Annie", "Aurelion Sol", "Azir", "Brand", "Cassiopeia", "Elise", "Fiddlesticks", "Heimerdinger", "Karma", "Karthus", "Kenne", "Lissandra", "Lux", "Malzahar", "Morgana", "Orianna", "Ryze", "Swain", "Syndra", "Taliyah", "Twisted Fate", "Veigar", "Vel'Koz", "Viktor", "Vladimir", "Xerath", "Ziggs", "Zyra", "Select Champion..."};
+        String supports[] = {"Bard", "Braum", "Ivern", "Janna", "Lulu", "Nami", "Nunu", "Sona", "Soraka", "Tahm Kench", "Taric", "Thresh", "Zilean", "Select Champion..."};
+        String marksman[] = {"Ashe", "Caitlyn", "Corki", "Draven", "Ezreal", "Graves", "Jhin", "Jinx", "Kalista", "Kindred", "Kog'Maw", "Lucian", "Miss Fortune", "Quinn", "Sivir", "Teemo", "Tristana", "Twitch", "Urgot", "Varus", "Vayne", "Select Champion..."};
 
         for (String name : names) {
             if (jComboBox1.getSelectedIndex() < names.length) {
                 ch = null;
+                rlcb = null;
+                rl = null;
             }
         }
 
@@ -648,27 +656,27 @@ public class Randomizer extends javax.swing.JFrame {
                 ch2.setFourFityIcons();
             }
             if (jCheckBox7.isSelected()) {
-                jLabel1.setText(rlcb.getAssassins());
+                jLabel1.setText(assassins[jComboBox1.getSelectedIndex()]);
                 rlcb.setAssassinsIcons();
             }
             if (jCheckBox8.isSelected()) {
-                jLabel1.setText(rlcb.getFighters());
+                jLabel1.setText(fighters[jComboBox1.getSelectedIndex()]);
                 rlcb.setFightersIcons();
             }
             if (jCheckBox9.isSelected()) {
-                jLabel1.setText(rlcb.getMages());
+                jLabel1.setText(mages[jComboBox1.getSelectedIndex()]);
                 rlcb.setMagesIcons();
             }
             if (jCheckBox10.isSelected()) {
-                jLabel1.setText(rlcb.getMarksman());
+                jLabel1.setText(marksman[jComboBox1.getSelectedIndex()]);
                 rlcb.setMarksmanIcons();
             }
             if (jCheckBox11.isSelected()) {
-                jLabel1.setText(rlcb.getSupports());
+                jLabel1.setText(supports[jComboBox1.getSelectedIndex()]);
                 rlcb.setSupportsIcons();
             }
             if (jCheckBox12.isSelected()) {
-                jLabel1.setText(rlcb.getTanks());
+                jLabel1.setText(tank[jComboBox1.getSelectedIndex()]);
                 rlcb.setTanksIcons();
             }
 
