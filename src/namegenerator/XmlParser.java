@@ -26,12 +26,11 @@ public class XmlParser {
 
     public void initializeToComboBox() {
         try {
-            File inputFile = new File("C:\\Users\\Falcuun\\Desktop\\Champions.xml");
+            File inputFile = new File("Champions.xml");
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(inputFile);
             doc.getDocumentElement().normalize();
-            System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
             NodeList nList = doc.getElementsByTagName("champion");
             System.out.println("----------------------------");
 
@@ -45,9 +44,6 @@ public class XmlParser {
                     System.out.println("\nCurrent Element :" + nNode.getNodeName());
                     System.out.println(champions);
                     System.out.println(prices);
-
-                    // System.out.println("Champion name is : "  + eElement.getElementsByTagName("name").item(0).getTextContent());
-                    // System.out.println("Champion price is : " + eElement.getElementsByTagName("price").item(0).getTextContent());
                 }
             }
 
