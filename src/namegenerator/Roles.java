@@ -299,7 +299,7 @@ public class Roles {
                 ii = new ImageIcon(getClass().getResource("/icons/Heimerdinger_Square_0.png"));
                 break;
             case 3:
-                ii = new ImageIcon(getClass().getResource("/icons/Karma_0.png"));
+                ii = new ImageIcon(getClass().getResource("/icons/Karma_Square_0.png"));
                 break;
             case 4:
                 ii = new ImageIcon(getClass().getResource("/icons/Karthus_Square_0.png"));

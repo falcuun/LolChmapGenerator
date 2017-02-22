@@ -12,6 +12,8 @@ public class ChampionsTwo {
     JComboBox comboBox;
     ImageIcon ii;
     Desktop dt = Desktop.getDesktop();
+    
+    
 
     public void setIconsFromComboBox() {
         switch (comboBox.getSelectedIndex()) {
