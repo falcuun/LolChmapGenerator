@@ -106,7 +106,7 @@
                                   <Component id="jCheckBox12" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Component id="jLabel3" min="-2" pref="145" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="160" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="229" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -161,7 +161,7 @@
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="jCheckBox6" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace min="62" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -278,151 +278,15 @@
         </Component>
         <Component class="javax.swing.JComboBox" name="jComboBox1">
           <Properties>
-            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="135">
-                <StringItem index="0" value="Aatrox"/>
-                <StringItem index="1" value="Ahri"/>
-                <StringItem index="2" value="Akali"/>
-                <StringItem index="3" value="Alistar"/>
-                <StringItem index="4" value="Amumu"/>
-                <StringItem index="5" value="Anivia"/>
-                <StringItem index="6" value="Annie"/>
-                <StringItem index="7" value="Ashe"/>
-                <StringItem index="8" value="Aurelion Sol"/>
-                <StringItem index="9" value="Azir"/>
-                <StringItem index="10" value="Bard"/>
-                <StringItem index="11" value="Blitzcrank"/>
-                <StringItem index="12" value="Brand"/>
-                <StringItem index="13" value="Braum"/>
-                <StringItem index="14" value="Caitlyn"/>
-                <StringItem index="15" value="Cassiopeia"/>
-                <StringItem index="16" value="Cho&apos;Gath"/>
-                <StringItem index="17" value="Corki"/>
-                <StringItem index="18" value="Darius"/>
-                <StringItem index="19" value="Diana"/>
-                <StringItem index="20" value="Dr.Mundp "/>
-                <StringItem index="21" value="Draven"/>
-                <StringItem index="22" value="Ekko "/>
-                <StringItem index="23" value="Elise"/>
-                <StringItem index="24" value="Evenlynn"/>
-                <StringItem index="25" value="Ezreal"/>
-                <StringItem index="26" value="Fiddlesticks"/>
-                <StringItem index="27" value="Fiora"/>
-                <StringItem index="28" value="Fizz"/>
-                <StringItem index="29" value="Galio"/>
-                <StringItem index="30" value="GangPlank"/>
-                <StringItem index="31" value="Garen"/>
-                <StringItem index="32" value="Gnar"/>
-                <StringItem index="33" value="Gragas"/>
-                <StringItem index="34" value="Graves"/>
-                <StringItem index="35" value="Hecarim"/>
-                <StringItem index="36" value="Heimerdinger"/>
-                <StringItem index="37" value="Illaoi"/>
-                <StringItem index="38" value="Irelia"/>
-                <StringItem index="39" value="Ivern"/>
-                <StringItem index="40" value="Janna"/>
-                <StringItem index="41" value="Jarvan IV"/>
-                <StringItem index="42" value="Jax"/>
-                <StringItem index="43" value="Jayce"/>
-                <StringItem index="44" value="Jhin"/>
-                <StringItem index="45" value="Jinx"/>
-                <StringItem index="46" value="Kalista"/>
-                <StringItem index="47" value="Karma"/>
-                <StringItem index="48" value="Karthus"/>
-                <StringItem index="49" value="Kassadin"/>
-                <StringItem index="50" value="Katarina"/>
-                <StringItem index="51" value="Kayle"/>
-                <StringItem index="52" value="Kennen"/>
-                <StringItem index="53" value="Kha&apos;Zix"/>
-                <StringItem index="54" value="Kindred"/>
-                <StringItem index="55" value="Kled"/>
-                <StringItem index="56" value="Kog&apos;Maw"/>
-                <StringItem index="57" value="LeBlanc"/>
-                <StringItem index="58" value="Lee Sin"/>
-                <StringItem index="59" value="Leona"/>
-                <StringItem index="60" value="Lissandra"/>
-                <StringItem index="61" value="Lucian"/>
-                <StringItem index="62" value="Lulu"/>
-                <StringItem index="63" value="Lux"/>
-                <StringItem index="64" value="Malphite"/>
-                <StringItem index="65" value="Malzahar"/>
-                <StringItem index="66" value="Maokai"/>
-                <StringItem index="67" value="Master Yi"/>
-                <StringItem index="68" value="Miss Fortune"/>
-                <StringItem index="69" value="Monkey King"/>
-                <StringItem index="70" value="Mordekaiser"/>
-                <StringItem index="71" value="Morgana"/>
-                <StringItem index="72" value="Nami "/>
-                <StringItem index="73" value="Nasus"/>
-                <StringItem index="74" value="Nautilus"/>
-                <StringItem index="75" value="Nidalee"/>
-                <StringItem index="76" value="Nocturne"/>
-                <StringItem index="77" value="Nunu"/>
-                <StringItem index="78" value="Olaf"/>
-                <StringItem index="79" value="Orianna"/>
-                <StringItem index="80" value="Pantheon"/>
-                <StringItem index="81" value="Poppy"/>
-                <StringItem index="82" value="Quinn"/>
-                <StringItem index="83" value="Rammus"/>
-                <StringItem index="84" value="Rek&apos;Sai"/>
-                <StringItem index="85" value="Renekton"/>
-                <StringItem index="86" value="Rengar"/>
-                <StringItem index="87" value="Riven"/>
-                <StringItem index="88" value="Rumble"/>
-                <StringItem index="89" value="Ryze"/>
-                <StringItem index="90" value="Sejuani"/>
-                <StringItem index="91" value="Shaco"/>
-                <StringItem index="92" value="Shen"/>
-                <StringItem index="93" value="Shyvana"/>
-                <StringItem index="94" value="Singed"/>
-                <StringItem index="95" value="Sion"/>
-                <StringItem index="96" value="Sivir"/>
-                <StringItem index="97" value="Skarner"/>
-                <StringItem index="98" value="Sona"/>
-                <StringItem index="99" value="Soraka"/>
-                <StringItem index="100" value="Swain"/>
-                <StringItem index="101" value="Syndra"/>
-                <StringItem index="102" value="Tahm Kench"/>
-                <StringItem index="103" value="Taliyah"/>
-                <StringItem index="104" value="Talon"/>
-                <StringItem index="105" value="Taric"/>
-                <StringItem index="106" value="Teemo"/>
-                <StringItem index="107" value="Thresh"/>
-                <StringItem index="108" value="Tristana"/>
-                <StringItem index="109" value="Trundle"/>
-                <StringItem index="110" value="Tryndamere"/>
-                <StringItem index="111" value="Twisted Fate"/>
-                <StringItem index="112" value="Twitch"/>
-                <StringItem index="113" value="Udyr"/>
-                <StringItem index="114" value="Urgot"/>
-                <StringItem index="115" value="Varus"/>
-                <StringItem index="116" value="Vayne"/>
-                <StringItem index="117" value="Veigar"/>
-                <StringItem index="118" value="Vel&apos;Koz"/>
-                <StringItem index="119" value="Vi"/>
-                <StringItem index="120" value="Viktor"/>
-                <StringItem index="121" value="Vladimir"/>
-                <StringItem index="122" value="Volibear"/>
-                <StringItem index="123" value="Warwick"/>
-                <StringItem index="124" value="Xerath"/>
-                <StringItem index="125" value="Xin Zhao"/>
-                <StringItem index="126" value="Yasuo"/>
-                <StringItem index="127" value="Yorick"/>
-                <StringItem index="128" value="Zac"/>
-                <StringItem index="129" value="Zed"/>
-                <StringItem index="130" value="Ziggs"/>
-                <StringItem index="131" value="Zilean"/>
-                <StringItem index="132" value="Zyra"/>
-                <StringItem index="133" value="Camille"/>
-                <StringItem index="134" value="Select Champion...."/>
-              </StringArray>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="new javax.swing.DefaultComboBoxModel&lt;&gt;(new String[] { &quot;Aatrox&quot;, &quot;Ahri&quot;, &quot;Akali&quot;, &quot;Alistar&quot;, &quot;Amumu&quot;, &quot;Anivia&quot;, &quot;Annie&quot;, &quot;Ashe&quot;, &quot;Aurelion Sol&quot;, &quot;Azir&quot;, &quot;Bard&quot;, &quot;Blitzcrank&quot;, &quot;Brand&quot;, &quot;Braum&quot;, &quot;Caitlyn&quot;, &quot;Cassiopeia&quot;, &quot;Cho&apos;Gath&quot;, &quot;Corki&quot;, &quot;Darius&quot;, &quot;Diana&quot;, &quot;Dr.Mundp &quot;, &quot;Draven&quot;, &quot;Ekko &quot;, &quot;Elise&quot;, &quot;Evenlynn&quot;, &quot;Ezreal&quot;, &quot;Fiddlesticks&quot;, &quot;Fiora&quot;, &quot;Fizz&quot;, &quot;Galio&quot;, &quot;GangPlank&quot;, &quot;Garen&quot;, &quot;Gnar&quot;, &quot;Gragas&quot;, &quot;Graves&quot;, &quot;Hecarim&quot;, &quot;Heimerdinger&quot;, &quot;Illaoi&quot;, &quot;Irelia&quot;, &quot;Ivern&quot;, &quot;Janna&quot;, &quot;Jarvan IV&quot;, &quot;Jax&quot;, &quot;Jayce&quot;, &quot;Jhin&quot;, &quot;Jinx&quot;, &quot;Kalista&quot;, &quot;Karma&quot;, &quot;Karthus&quot;, &quot;Kassadin&quot;, &quot;Katarina&quot;, &quot;Kayle&quot;, &quot;Kennen&quot;, &quot;Kha&apos;Zix&quot;, &quot;Kindred&quot;, &quot;Kled&quot;, &quot;Kog&apos;Maw&quot;, &quot;LeBlanc&quot;, &quot;Lee Sin&quot;, &quot;Leona&quot;, &quot;Lissandra&quot;, &quot;Lucian&quot;, &quot;Lulu&quot;, &quot;Lux&quot;, &quot;Malphite&quot;, &quot;Malzahar&quot;, &quot;Maokai&quot;, &quot;Master Yi&quot;, &quot;Miss Fortune&quot;, &quot;Monkey King&quot;, &quot;Mordekaiser&quot;, &quot;Morgana&quot;, &quot;Nami &quot;, &quot;Nasus&quot;, &quot;Nautilus&quot;, &quot;Nidalee&quot;, &quot;Nocturne&quot;, &quot;Nunu&quot;, &quot;Olaf&quot;, &quot;Orianna&quot;, &quot;Pantheon&quot;, &quot;Poppy&quot;, &quot;Quinn&quot;, &quot;Rammus&quot;, &quot;Rek&apos;Sai&quot;, &quot;Renekton&quot;, &quot;Rengar&quot;, &quot;Riven&quot;, &quot;Rumble&quot;, &quot;Ryze&quot;, &quot;Sejuani&quot;, &quot;Shaco&quot;, &quot;Shen&quot;, &quot;Shyvana&quot;, &quot;Singed&quot;, &quot;Sion&quot;, &quot;Sivir&quot;, &quot;Skarner&quot;, &quot;Sona&quot;, &quot;Soraka&quot;, &quot;Swain&quot;, &quot;Syndra&quot;, &quot;Tahm Kench&quot;, &quot;Taliyah&quot;, &quot;Talon&quot;, &quot;Taric&quot;, &quot;Teemo&quot;, &quot;Thresh&quot;, &quot;Tristana&quot;, &quot;Trundle&quot;, &quot;Tryndamere&quot;, &quot;Twisted Fate&quot;, &quot;Twitch&quot;, &quot;Udyr&quot;, &quot;Urgot&quot;, &quot;Varus&quot;, &quot;Vayne&quot;, &quot;Veigar&quot;, &quot;Vel&apos;Koz&quot;, &quot;Vi&quot;, &quot;Viktor&quot;, &quot;Vladimir&quot;, &quot;Volibear&quot;, &quot;Warwick&quot;, &quot;Xerath&quot;, &quot;Xin Zhao&quot;, &quot;Yasuo&quot;, &quot;Yorick&quot;, &quot;Zac&quot;, &quot;Zed&quot;, &quot;Ziggs&quot;, &quot;Zilean&quot;, &quot;Zyra&quot;, &quot;Camille&quot;, &quot;Select Champion....&quot; })" type="code"/>
             </Property>
-            <Property name="selectedIndex" type="int" value="134"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox1ActionPerformed"/>
           </Events>
           <AuxValues>
+            <AuxValue name="JavaCodeGenerator_ListenersCodePost" type="java.lang.String" value="jComboBox1.setSelectedIndex(134);"/>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
           </AuxValues>
         </Component>

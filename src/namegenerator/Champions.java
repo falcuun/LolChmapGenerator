@@ -48,6 +48,7 @@ public class Champions {
     private int r5 = (int) (Math.random() * 43);
     private int r6 = (int) (Math.random() * 32);
     int cb = 5;
+    
     Desktop dt = Desktop.getDesktop();
 
     // Method that will be used by the click of the button in main frame to call for a random number and then generate a random champion name which

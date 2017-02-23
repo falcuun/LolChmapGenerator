@@ -5,16 +5,6 @@
  */
 package namegenerator;
 
-import java.awt.CheckboxGroup;
-import java.awt.Desktop;
-import java.awt.event.ActionListener;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.ImageIcon;
-
 /**
  *
  * @author Falcuun
@@ -147,12 +137,12 @@ public class Randomizer extends javax.swing.JFrame {
         });
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aatrox", "Ahri", "Akali", "Alistar", "Amumu", "Anivia", "Annie", "Ashe", "Aurelion Sol", "Azir", "Bard", "Blitzcrank", "Brand", "Braum", "Caitlyn", "Cassiopeia", "Cho'Gath", "Corki", "Darius", "Diana", "Dr.Mundp ", "Draven", "Ekko ", "Elise", "Evenlynn", "Ezreal", "Fiddlesticks", "Fiora", "Fizz", "Galio", "GangPlank", "Garen", "Gnar", "Gragas", "Graves", "Hecarim", "Heimerdinger", "Illaoi", "Irelia", "Ivern", "Janna", "Jarvan IV", "Jax", "Jayce", "Jhin", "Jinx", "Kalista", "Karma", "Karthus", "Kassadin", "Katarina", "Kayle", "Kennen", "Kha'Zix", "Kindred", "Kled", "Kog'Maw", "LeBlanc", "Lee Sin", "Leona", "Lissandra", "Lucian", "Lulu", "Lux", "Malphite", "Malzahar", "Maokai", "Master Yi", "Miss Fortune", "Monkey King", "Mordekaiser", "Morgana", "Nami ", "Nasus", "Nautilus", "Nidalee", "Nocturne", "Nunu", "Olaf", "Orianna", "Pantheon", "Poppy", "Quinn", "Rammus", "Rek'Sai", "Renekton", "Rengar", "Riven", "Rumble", "Ryze", "Sejuani", "Shaco", "Shen", "Shyvana", "Singed", "Sion", "Sivir", "Skarner", "Sona", "Soraka", "Swain", "Syndra", "Tahm Kench", "Taliyah", "Talon", "Taric", "Teemo", "Thresh", "Tristana", "Trundle", "Tryndamere", "Twisted Fate", "Twitch", "Udyr", "Urgot", "Varus", "Vayne", "Veigar", "Vel'Koz", "Vi", "Viktor", "Vladimir", "Volibear", "Warwick", "Xerath", "Xin Zhao", "Yasuo", "Yorick", "Zac", "Zed", "Ziggs", "Zilean", "Zyra", "Camille", "Select Champion...." }));
-        jComboBox1.setSelectedIndex(134);
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
             }
         });
+        jComboBox1.setSelectedIndex(134);
 
         jLabel4.setText("Choose champion from the list:");
 
@@ -249,7 +239,7 @@ public class Randomizer extends javax.swing.JFrame {
                                 .addComponent(jCheckBox12)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(160, 160, 160)))))
+                                .addGap(229, 229, 229)))))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -324,6 +314,7 @@ public class Randomizer extends javax.swing.JFrame {
     ChampionsTwo ch2;
     Roles rl;
     RolesComboBox rlcb;
+    
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
         // Makes an object of the Champion class (Class with all the Champion names)
@@ -699,32 +690,26 @@ public class Randomizer extends javax.swing.JFrame {
     }//GEN-LAST:event_jCheckBox7ActionPerformed
 
     private void jCheckBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox9ActionPerformed
-
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"Ahri", "Anivia", "Annie", "Aurelion Sol", "Azir", "Brand", "Cassiopeia", "Elise", "Fiddlesticks", "Heimerdinger", "Karma", "Karthus", "Kenne", "Lissandra", "Lux", "Malzahar", "Morgana", "Orianna", "Ryze", "Swain", "Syndra", "Taliyah", "Twisted Fate", "Veigar", "Vel'Koz", "Viktor", "Vladimir", "Xerath", "Ziggs", "Zyra", "Select Champion..."}));
         jComboBox1.setSelectedItem("Select Champion...");
-
     }//GEN-LAST:event_jCheckBox9ActionPerformed
 
     private void jCheckBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox8ActionPerformed
-
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"Aatrox", "Camille", "Darius", "Diana", "Dr. Mundo", "Fiora", "Gangplank", "Garen", "Gnar", "Gragas", "Hecarim", "Illaoi", "Irelia", "Jax", "Jayce", "Kayle", "Kled", "Lee Sin", "Wukong", "Mordekaiser", "Nasus", "Olaf", "Pantheon", "Rek'Sai", "Renekton", "Riven", "Rumble", "Shyvana", "Skarner", "Trundle", "Tryndamere", "Udyr", "Vi", "Volibear", "Warwick", "Xin Zhao", "Yasuo", "Yorick", "Select Champion..."}));
         jComboBox1.setSelectedItem("Select Champion...");
     }//GEN-LAST:event_jCheckBox8ActionPerformed
 
     private void jCheckBox10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox10ActionPerformed
-
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"Ashe", "Caitlyn", "Corki", "Draven", "Ezreal", "Graves", "Jhin", "Jinx", "Kalista", "Kindred", "Kog'Maw", "Lucian", "Miss Fortune", "Quinn", "Sivir", "Teemo", "Tristana", "Twitch", "Urgot", "Varus", "Vayne", "Select Champion..."}));
         jComboBox1.setSelectedItem("Select Champion...");
     }//GEN-LAST:event_jCheckBox10ActionPerformed
 
     private void jCheckBox11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox11ActionPerformed
-
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"Bard", "Braum", "Ivern", "Janna", "Lulu", "Nami", "Nunu", "Sona", "Soraka", "Tahm Kench", "Taric", "Thresh", "Zilean", "Select Champion..."}));
         jComboBox1.setSelectedItem("Select Champion...");
     }//GEN-LAST:event_jCheckBox11ActionPerformed
 
     private void jCheckBox12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox12ActionPerformed
-
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"Alistar", "Amumu", "Blitzcrank", "Cho'Gath", "Galio", "JarvanIV", "Leona", "Malphite", "Maokai", "Nautilus", "Poppy", "Rammus", "Sejuani", "Shen", "Singed", "Sion", "Zac", "Select Champion..."}));
         jComboBox1.setSelectedItem("Select Champion...");
     }//GEN-LAST:event_jCheckBox12ActionPerformed

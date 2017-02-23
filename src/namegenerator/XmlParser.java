@@ -1,12 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package namegenerator;
 
 import java.io.File;
-import javax.swing.JComboBox;
+import java.util.LinkedList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
@@ -14,17 +9,14 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-/**
- *
- * @author Falcuun
- */
 public class XmlParser {
 
-    JComboBox comboBox;
     String champions;
-    String prices;
+    int prices;
+   
+    LinkedList<Champion> listOfChampions = new LinkedList<>();
 
-    public void initializeToComboBox() {
+    public LinkedList parseChampions() {
         try {
             File inputFile = new File("Champions.xml");
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -32,29 +24,22 @@ public class XmlParser {
             Document doc = dBuilder.parse(inputFile);
             doc.getDocumentElement().normalize();
             NodeList nList = doc.getElementsByTagName("champion");
-            System.out.println("----------------------------");
-
             for (int temp = 0; temp < nList.getLength(); temp++) {
                 Node nNode = nList.item(temp);
                 if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+                    Champion champion = new Champion();
                     Element eElement = (Element) nNode;
                     champions = eElement.getElementsByTagName("name").item(0).getTextContent();
-                    prices = eElement.getElementsByTagName("price").item(0).getTextContent();
-                    comboBox.insertItemAt(champions, temp);
-                    System.out.println("\nCurrent Element :" + nNode.getNodeName());
-                    System.out.println(champions);
-                    System.out.println(prices);
+                    prices = Integer.parseInt(eElement.getElementsByTagName("price").item(0).getTextContent());
+                    champion.setName(champions);
+                    champion.setPrice(prices);
+                    listOfChampions.add(champion);
+                    
                 }
             }
-
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-    public String getChampions(){
-        return champions;
-    }
-    public XmlParser(JComboBox cb) {
-        this.comboBox = cb;
+        return listOfChampions;
     }
 }
