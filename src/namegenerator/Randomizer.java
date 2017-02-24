@@ -5,6 +5,9 @@
  */
 package namegenerator;
 
+import java.util.LinkedList;
+import java.util.ListIterator;
+
 /**
  *
  * @author Falcuun
@@ -136,13 +139,17 @@ public class Randomizer extends javax.swing.JFrame {
             }
         });
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aatrox", "Ahri", "Akali", "Alistar", "Amumu", "Anivia", "Annie", "Ashe", "Aurelion Sol", "Azir", "Bard", "Blitzcrank", "Brand", "Braum", "Caitlyn", "Cassiopeia", "Cho'Gath", "Corki", "Darius", "Diana", "Dr.Mundp ", "Draven", "Ekko ", "Elise", "Evenlynn", "Ezreal", "Fiddlesticks", "Fiora", "Fizz", "Galio", "GangPlank", "Garen", "Gnar", "Gragas", "Graves", "Hecarim", "Heimerdinger", "Illaoi", "Irelia", "Ivern", "Janna", "Jarvan IV", "Jax", "Jayce", "Jhin", "Jinx", "Kalista", "Karma", "Karthus", "Kassadin", "Katarina", "Kayle", "Kennen", "Kha'Zix", "Kindred", "Kled", "Kog'Maw", "LeBlanc", "Lee Sin", "Leona", "Lissandra", "Lucian", "Lulu", "Lux", "Malphite", "Malzahar", "Maokai", "Master Yi", "Miss Fortune", "Monkey King", "Mordekaiser", "Morgana", "Nami ", "Nasus", "Nautilus", "Nidalee", "Nocturne", "Nunu", "Olaf", "Orianna", "Pantheon", "Poppy", "Quinn", "Rammus", "Rek'Sai", "Renekton", "Rengar", "Riven", "Rumble", "Ryze", "Sejuani", "Shaco", "Shen", "Shyvana", "Singed", "Sion", "Sivir", "Skarner", "Sona", "Soraka", "Swain", "Syndra", "Tahm Kench", "Taliyah", "Talon", "Taric", "Teemo", "Thresh", "Tristana", "Trundle", "Tryndamere", "Twisted Fate", "Twitch", "Udyr", "Urgot", "Varus", "Vayne", "Veigar", "Vel'Koz", "Vi", "Viktor", "Vladimir", "Volibear", "Warwick", "Xerath", "Xin Zhao", "Yasuo", "Yorick", "Zac", "Zed", "Ziggs", "Zilean", "Zyra", "Camille", "Select Champion...." }));
+        XmlParser xp = new XmlParser();
+        LinkedList<Champion> ll = xp.parseChampions();
+        for (int i = 0; i < ll.size(); i++) {
+            jComboBox1.addItem(ll.get(i).getName());
+        }
+        jComboBox1.setSelectedIndex(134);
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
             }
         });
-        jComboBox1.setSelectedIndex(134);
 
         jLabel4.setText("Choose champion from the list:");
 
@@ -314,7 +321,7 @@ public class Randomizer extends javax.swing.JFrame {
     ChampionsTwo ch2;
     Roles rl;
     RolesComboBox rlcb;
-    
+
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
         // Makes an object of the Champion class (Class with all the Champion names)
@@ -421,21 +428,6 @@ public class Randomizer extends javax.swing.JFrame {
             "Kled", "Lissandra", "Lucian", "Nami", "Quinn", "Rek Sai", "Rengar", "Syndra", "Tahm Kench", "Taliyah", "Thresh", "Vel Koz", "Vi", "Yasuo", "Zac", "Zed", "Generate"}));
         jComboBox1.setSelectedIndex(32);
     }//GEN-LAST:event_jCheckBox3ActionPerformed
-    private void jCheckBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox6ActionPerformed
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"Aatrox", "Ahri", "Akali", "Alistar", "Amumu", "Anivia", "Annie", "Ashe", "Aurelion Sol", "Azir",
-            "Bard", "Blitzcrank", "Brand", "Braum", "Caitlyn", "Cassiopeia", "Cho'Gath", "Corki", "Darius", "Diana",
-            "Dr.Mundo", "Draven", "Ekko", "Elise", "Evenlynn", "Ezreal", "Fiddlesticks", "Fiora", "Fizz", "Galio", "GangPlank", "Garen",
-            "Gnar", "Gragas", "Graves", "Hecarim", "Heimerdinger", "Illaoi", "Irelia", "Ivren", "Janna", "Jarvan IV",
-            "Jax", "Jayce", "Jhin", "Jinx", "Kalista", "Karma", "Karthus", "Kassadin", "Katarina", "Kayle", "Kennen", "Kha'Zix", "Kindred",
-            "Kled", "Kog'Maw", "LeBlanc", "Lee Sin", "Leona", "Lissandra", " Lucian", "Lulu", "Lux", "Malphite", "Malzahar", "Maokai",
-            "Master Yi", "Miss Fortune", "Wukong", "Mordekaiser", "Morgana", "Nami", "Nasus", "Nautilus", "Nidalee", "Nocturne", "Nunu", "Olaf",
-            "Orianna", "Pantheon", "Poppy", "Quinn", "Rammus", "Rek'Sai", "Renekton", "Rengar", "Riven", "Rumble", "Ryze", "Sejuani",
-            "Shaco", "Shen", "Shyvana", "Singed", "Sion", "Sivir", "Skarner", "Sona", "Soraka", "Swain", "Syndra",
-            "Tahm Kench", "Taliyah", "Talon", "Taric", "Teemo", "Thresh", "Tristana", "Trundle", "Tryndamere", "Twisted Fate", "Twitch", "Udyr",
-            "Urgot", "Varus", "Vayne", "Veigar", "Vel'Koz", "Vi", "Viktor", "Vladimir", "Volibear", "Warwick", "Xerath", "Xin Zhao", "Yasuo",
-            "Yorick", "Zac", "Zed", "Ziggs", "Zilean", "Zyra", "Camille", "Select Champion...."}));
-        jComboBox1.setSelectedIndex(134);
-    }//GEN-LAST:event_jCheckBox6ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
@@ -645,7 +637,7 @@ public class Randomizer extends javax.swing.JFrame {
                 ch2.setFourtyEightHundredIcons();
             }
             if (jCheckBox6.isSelected()) {
-                jLabel1.setText(names[jComboBox1.getSelectedIndex()]);
+//                jLabel1.setText(names[jComboBox1.getSelectedIndex()]);
                 ch2.setIconsFromComboBox();
             }
             if (jCheckBox4.isSelected()) {
@@ -713,6 +705,17 @@ public class Randomizer extends javax.swing.JFrame {
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[]{"Alistar", "Amumu", "Blitzcrank", "Cho'Gath", "Galio", "JarvanIV", "Leona", "Malphite", "Maokai", "Nautilus", "Poppy", "Rammus", "Sejuani", "Shen", "Singed", "Sion", "Zac", "Select Champion..."}));
         jComboBox1.setSelectedItem("Select Champion...");
     }//GEN-LAST:event_jCheckBox12ActionPerformed
+
+    private void jCheckBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox6ActionPerformed
+        jComboBox1.removeAllItems();
+        XmlParser xp = new XmlParser();
+        LinkedList<Champion> ll = xp.parseChampions();
+        for (int i = 0; i < ll.size(); i++) {
+            jComboBox1.addItem(ll.get(i).getName());
+        }
+        jComboBox1.setSelectedIndex(134);
+
+    }//GEN-LAST:event_jCheckBox6ActionPerformed
 
     /**
      * @param args the command line arguments

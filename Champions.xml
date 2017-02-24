@@ -1,806 +1,812 @@
 <champions>
     <champion>
-        <name>aatrox</name>
+        <name>Aatrox</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>ahri</name>
+        <name>Ahri</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>akali</name>
+        <name>Akali</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>alistar</name>
+        <name>Alistar</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>amumu</name>
+        <name>Amumu</name>
         <prices>
             <price>450</price>
         </prices>
     </champion>
     <champion>
-        <name>anivia</name>
+        <name>Anivia</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>annie</name>
+        <name>Annie</name>
         <prices>
             <price>450</price>
         </prices>
     </champion>
     <champion>
-        <name>ashe</name>
+        <name>Ashe</name>
         <prices>
             <price>450</price>
         </prices>
     </champion>
     <champion>
-        <name>aurelionSol</name>
+        <name>Aurelion Sol</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>azir</name>
+        <name>Azir</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>bard</name>
+        <name>Bard</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>blitzcrank</name>
+        <name>Blitzcrank</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>brand</name>
+        <name>Brand</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>braum</name>
+        <name>Braum</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>caitlyn</name>
+        <name>Caitlyn</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>cassiopeia</name>
+        <name>Cassiopeia</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>chogath</name>
+        <name>Cho'gath</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>corki</name>
+        <name>Corki</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>darius</name>
+        <name>Darius</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>diana</name>
+        <name>Diana</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>drMundo</name>
+        <name>Dr.Mundo</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>draven</name>
+        <name>Draven</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>ekko</name>
+        <name>Ekko</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>elise</name>
+        <name>Elise</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>evelynn</name>
+        <name>Evelynn</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>ezreal</name>
+        <name>Ezreal</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>fiddlesticks</name>
+        <name>Fiddlesticks</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>fiora</name>
+        <name>Fiora</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>fizz</name>
+        <name>Fizz</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>galio</name>
+        <name>Galio</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>gangplank</name>
+        <name>Gangplank</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>garen</name>
+        <name>Garen</name>
         <prices>
             <price>450</price>
         </prices>
     </champion>
     <champion>
-        <name>gnar</name>
+        <name>Gnar</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>gragas</name>
+        <name>Gragas</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>graves</name>
+        <name>Graves</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>hecarim</name>
+        <name>Hecarim</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>heimerdinger</name>
+        <name>Heimerdinger</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>illaoi</name>
+        <name>Illaoi</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>irelia</name>
+        <name>Irelia</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>ivern</name>
+        <name>Ivern</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>janna</name>
+        <name>Janna</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>jarvanIv</name>
+        <name>Jarvan IV</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>jax</name>
+        <name>Jax</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>jayce</name>
+        <name>Jayce</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>jhin</name>
+        <name>Jhin</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>jinx</name>
+        <name>Jinx</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>kalista</name>
+        <name>Kalista</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>karma</name>
+        <name>Karma</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>karthus</name>
+        <name>Karthus</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>kassadin</name>
+        <name>Kassadin</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>katarina</name>
+        <name>Katarina</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>kayle</name>
+        <name>Kayle</name>
         <prices>
             <price>450</price>
         </prices>
     </champion>
     <champion>
-        <name>kennen</name>
+        <name>Kennen</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>khaZix</name>
+        <name>Kha'Zix</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>kindred</name>
+        <name>Kindred</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>kled</name>
+        <name>Kled</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>kogmaw</name>
+        <name>Kog'maw</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>leblanc</name>
+        <name>Leblanc</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>leeSin</name>
+        <name>Lee Sin</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>leona</name>
+        <name>Leona</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>lissandra</name>
+        <name>Lissandra</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>lucian</name>
+        <name>Lucian</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>lulu</name>
+        <name>Lulu</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>lux</name>
+        <name>Lux</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>malphite</name>
+        <name>Malphite</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>malzahar</name>
+        <name>Malzahar</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>maokai</name>
+        <name>Maokai</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>masterYi</name>
+        <name>Master Yi</name>
         <prices>
             <price>450</price>
         </prices>
     </champion>
     <champion>
-        <name>missFortune</name>
+        <name>Miss Fortune</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>monkeyKing</name>
+        <name>Wukong</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>mordekaiser</name>
+        <name>Mordekaiser</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>morgana</name>
+        <name>Morgana</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>nami</name>
+        <name>Nami</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>nasus</name>
+        <name>Nasus</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>nautilus</name>
+        <name>Nautilus</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>nidalee</name>
+        <name>Nidalee</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>nocturne</name>
+        <name>Nocturne</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>nunu</name>
+        <name>Nunu</name>
         <prices>
             <price>450</price>
         </prices>
     </champion>
     <champion>
-        <name>olaf</name>
+        <name>Olaf</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>orianna</name>
+        <name>Orianna</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>pantheon</name>
+        <name>Pantheon</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>poppy</name>
+        <name>Poppy</name>
         <prices>
             <price>450</price>
         </prices>
     </champion>
     <champion>
-        <name>quinn</name>
+        <name>Quinn</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>rammus</name>
+        <name>Rammus</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>rekSai</name>
+        <name>RekSai</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>renekton</name>
+        <name>Renekton</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>rengar</name>
+        <name>Rengar</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>riven</name>
+        <name>Riven</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>rumble</name>
+        <name>Rumble</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>ryze</name>
+        <name>Ryze</name>
         <prices>
             <price>450</price>
         </prices>
     </champion>
     <champion>
-        <name>sejuani</name>
+        <name>Sejuani</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>shaco</name>
+        <name>Shaco</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>shen</name>
+        <name>Shen</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>shyvana</name>
+        <name>Shyvana</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>singed</name>
+        <name>Singed</name>
         <prices>
             <price>450</price>
         </prices>
     </champion>
     <champion>
-        <name>sion</name>
+        <name>Sion</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>sivir</name>
+        <name>Sivir</name>
         <prices>
             <price>450</price>
         </prices>
     </champion>
     <champion>
-        <name>skarner</name>
+        <name>Skarner</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>sona</name>
+        <name>Sona</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>soraka</name>
+        <name>Soraka</name>
         <prices>
             <price>450</price>
         </prices>
     </champion>
     <champion>
-        <name>swain</name>
+        <name>Swain</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>syndra</name>
+        <name>Syndra</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>tahmKench</name>
+        <name>TahmKench</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>taliyah</name>
+        <name>Taliyah</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>talon</name>
+        <name>Talon</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>taric</name>
+        <name>Taric</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>teemo</name>
+        <name>Teemo</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>thresh</name>
+        <name>Thresh</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>tristana</name>
+        <name>Tristana</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>trundle</name>
+        <name>Trundle</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>tryndamere</name>
+        <name>Tryndamere</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>twsitedFate</name>
+        <name>Twsited Fate</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>twitch</name>
+        <name>Twitch</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>udyr</name>
+        <name>Udyr</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>urgot</name>
+        <name>Urgot</name>
         <prices>
             <price>3150</price>
         </prices>
     </champion>
     <champion>
-        <name>varus</name>
+        <name>Varus</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>vayne</name>
+        <name>Vayne</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>veigar</name>
+        <name>Veigar</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>velKoz</name>
+        <name>VelKoz</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>vi</name>
+        <name>Vi</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>viktor</name>
+        <name>Viktor</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>vladimir</name>
+        <name>Vladimir</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>volibear</name>
+        <name>Volibear</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>warwick</name>
+        <name>Warwick</name>
         <prices>
             <price>450</price>
         </prices>
     </champion>
     <champion>
-        <name>xerath</name>
+        <name>Xerath</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>xinZhao</name>
+        <name>XinZhao</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>yasuo</name>
+        <name>Yasuo</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>yorick</name>
+        <name>Yorick</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>zac</name>
+        <name>Zac</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>zed</name>
+        <name>Zed</name>
         <prices>
             <price>6300</price>
         </prices>
     </champion>
     <champion>
-        <name>ziggs</name>
+        <name>Ziggs</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>zilean</name>
+        <name>Zilean</name>
         <prices>
             <price>1350</price>
         </prices>
     </champion>
     <champion>
-        <name>zyra</name>
+        <name>Zyra</name>
         <prices>
             <price>4800</price>
         </prices>
     </champion>
     <champion>
-        <name>camille</name>
+        <name>Camille</name>
         <prices>
             <price>6300</price>
+        </prices>
+    </champion>
+<champion>
+        <name>Select champion</name>
+        <prices>
+            <price>1</price>
         </prices>
     </champion>
 </champions>

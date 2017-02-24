@@ -14,6 +14,8 @@ public class Champions {
     private ImageIcon ii;
     private ImageIcon ii1;
     JComboBox comboBox;
+    
+   
 
     // Create a array of strings with Champion names in it that will later print out in a jLabel: 
     private final String names[] = {"Aatrox", "Ahri", "Akali", "Alistar", "Amumu", "Anivia", "Annie", "Ashe", "Aurelion Sol", "Azir",

@@ -1,5 +1,7 @@
 package namegenerator;
 
+import java.util.Arrays;
+
 /**
  *
  * @author Falcuun
@@ -10,6 +12,7 @@ public class NameGenerator {
         Randomizer randdd = new Randomizer();
         randdd.setLocation(500, 350);
         randdd.setVisible(true);
+        
     }
 
 }
