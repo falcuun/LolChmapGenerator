@@ -19,3 +19,6 @@ Back when this code was originally written, it took over few weeks, maybe 2 mont
 Hope this helps anyone who stumbles upon this project.
 
 Keep on coding! 
+
+
+The original look of the app ![alt text](https://i.imgur.com/T0hX1dp.png)
