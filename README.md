@@ -1,10 +1,10 @@
 
-``` Original ReadMeFile```
+## Original ReadMeFile
 # LoLChampGenerator
  
 Software that should generate a random champion from League of Legends and provide a guide link for it. (Finished - Code refurbishing possible; UI Update possible)
 
-```ReadMe Edit```
+## ReadMe Edit
 This was the first ever JAVA Project that I've done that wasn't as school (university) project. It was done when I had no understanding of GUI and while I had no idea what JSON or XML was. This code will be kept in this branch to display the difference 4 years of experience can do.
 
 Even though I haven't done that much JAVA in past 4 years, I was able to reduce the amount of code by a lot, after years of programming, I have learned of different data structures and of different ways to work with data, likewise, the technologies (Frameworks, libraries etc... ) have advanced, allowing me to easier perform some of the tasks even though I'm unfamiliar with the language. 
