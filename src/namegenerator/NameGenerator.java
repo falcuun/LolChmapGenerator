@@ -1,4 +1,8 @@
 package namegenerator;
+
+import javax.swing.*;
+import java.awt.*;
+
 /**
  *
  * @author Falcuun
@@ -6,10 +10,13 @@ package namegenerator;
 public class NameGenerator {
 
     public static void main(String[] args) {
-        Randomizer randdd = new Randomizer();
-        randdd.setLocation(500, 350);
-        randdd.setVisible(true);
-        
+
+    //    Randomizer randomizerFrame = new Randomizer();
+    //    randomizerFrame.setLocation(500, 350);
+    //    randomizerFrame.setSize(new Dimension(500, 500));
+    //    randomizerFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    //    randomizerFrame.setVisible(true);
+    //
     }
 
 }

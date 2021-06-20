@@ -2,6 +2,7 @@ package namegenerator.Models;
 
 import com.google.gson.annotations.Expose;
 
+import javax.swing.*;
 import java.util.List;
 
 public class Champion {

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Randomizer">
+  <grid id="27dc6" binding="randomizerPanel" layout-manager="GridLayoutManager" row-count="9" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="208" y="219" width="978" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-394497"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="1b422" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Georgia" size="12" style="2"/>
+          <foreground color="-16777216"/>
+          <horizontalAlignment value="2"/>
+          <text value="Choose Champion From the List"/>
+        </properties>
+      </component>
+      <component id="fe218" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <vspacer id="9a9ee">
+        <constraints>
+          <grid row="2" column="0" row-span="2" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="da48b" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-16777216"/>
+          <text value="Sort By Role"/>
+        </properties>
+      </component>
+      <component id="9cc3f" class="javax.swing.JCheckBox" binding="assassinsCheckBox" default-binding="true">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-196609"/>
+          <text value="Assassins"/>
+        </properties>
+      </component>
+      <component id="5edeb" class="javax.swing.JCheckBox" binding="fightersCheckBox" default-binding="true">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-394497"/>
+          <text value="Fighters"/>
+        </properties>
+      </component>
+      <component id="ed64e" class="javax.swing.JCheckBox" binding="magesCheckBox" default-binding="true">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-393217"/>
+          <text value="Mages"/>
+        </properties>
+      </component>
+      <component id="8b924" class="javax.swing.JCheckBox" binding="marksmanCheckBox">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-394497"/>
+          <text value="Marskman"/>
+        </properties>
+      </component>
+      <component id="9f4b2" class="javax.swing.JCheckBox" binding="supportsCheckBox" default-binding="true">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-394497"/>
+          <enabled value="true"/>
+          <text value="Supports"/>
+        </properties>
+      </component>
+      <component id="b7d11" class="javax.swing.JCheckBox" binding="tanksCheckBox" default-binding="true">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-394497"/>
+          <enabled value="true"/>
+          <text value="Tanks"/>
+        </properties>
+      </component>
+      <vspacer id="ce15f">
+        <constraints>
+          <grid row="7" column="3" row-span="2" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="fab7f" class="javax.swing.JButton" binding="showGuideButton" default-binding="true">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Show Guide"/>
+        </properties>
+      </component>
+      <vspacer id="c9fcb">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="f27b5" class="javax.swing.JButton" binding="generateAChampionButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-394497"/>
+          <enabled value="true"/>
+          <foreground color="-16777216"/>
+          <text value="Generate A Champion"/>
+        </properties>
+      </component>
+      <component id="76a46" class="javax.swing.JLabel" binding="generatedChampionName">
+        <constraints>
+          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Georgia" size="20" style="3"/>
+          <foreground color="-16777216"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Generate A Champion!"/>
+          <verticalAlignment value="1"/>
+        </properties>
+      </component>
+      <component id="9fa07" class="javax.swing.JLabel" binding="generatedChampionImage">
+        <constraints>
+          <grid row="3" column="4" row-span="5" col-span="1" vsize-policy="2" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
