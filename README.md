@@ -9,4 +9,4 @@ There UI of the application differs mostly due to the fact that it was built usi
 
 Interestingly enough, all of the old back-end logic is now gone and has been replaced. Which goes to show how bad the old one was.
 
-### Please pay a visit to the [Old Branch](https://github.com/falcuun/LolChmapGenerator/tree/Old_Code) in order to see the difference and why this was done
+### Please pay a visit to the [Old Branch](https://github.com/falcuun/LolChmapGenerator/tree/Old_Code/src/namegenerator) in order to see the difference and why this was done
