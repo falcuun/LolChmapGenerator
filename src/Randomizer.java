@@ -27,8 +27,6 @@ public class Randomizer extends JFrame {
     private JLabel generatedChampionImage;
 
 
-    private final String ICONS_PATH = "src/img/champion/Icons/";
-
     private final ArrayList<Champion> champions = JSONParser.FromJsonToChampions();
     private final Dictionary<String, String> guides = JSONParser.FromJsonToChampionGuideLinks();
     private ArrayList<Champion> sortedChampions = champions;
@@ -36,7 +34,7 @@ public class Randomizer extends JFrame {
     private int newGeneratedChamp;
     private Champion currentChampion;
 
-    private Desktop dt = Desktop.getDesktop();
+    private final Desktop dt = Desktop.getDesktop();
 
     private void populateStartingData() {
         championList.setModel(new DefaultComboBoxModel<>(ChampionListToChampionNamesArrayConverter.ChampionNames(sortedChampions)));
@@ -44,24 +42,12 @@ public class Randomizer extends JFrame {
     }
 
     private void initActionListeners() {
-        assassinsCheckBox.addActionListener(e -> {
-            filterChampionsPerCheckbox(assassinsCheckBox);
-        });
-        fighterCheckBox.addActionListener(e -> {
-            filterChampionsPerCheckbox(fighterCheckBox);
-        });
-        mageCheckBox.addActionListener(e -> {
-            filterChampionsPerCheckbox(mageCheckBox);
-        });
-        marksmanCheckBox.addActionListener(e -> {
-            filterChampionsPerCheckbox(marksmanCheckBox);
-        });
-        supportCheckBox.addActionListener(e -> {
-            filterChampionsPerCheckbox(supportCheckBox);
-        });
-        tankCheckBox.addActionListener(e -> {
-            filterChampionsPerCheckbox(tankCheckBox);
-        });
+        assassinsCheckBox.addActionListener(e -> filterChampionsPerCheckbox(assassinsCheckBox));
+        fighterCheckBox.addActionListener(e -> filterChampionsPerCheckbox(fighterCheckBox));
+        mageCheckBox.addActionListener(e -> filterChampionsPerCheckbox(mageCheckBox));
+        marksmanCheckBox.addActionListener(e -> filterChampionsPerCheckbox(marksmanCheckBox));
+        supportCheckBox.addActionListener(e -> filterChampionsPerCheckbox(supportCheckBox));
+        tankCheckBox.addActionListener(e -> filterChampionsPerCheckbox(tankCheckBox));
 
         generateAChampionButton.addActionListener(e -> {
             int randomIndex = randomChampionIndex();
@@ -76,14 +62,13 @@ public class Randomizer extends JFrame {
                 ioException.printStackTrace();
             }
         });
-        championList.addActionListener(e ->{
-            setChampion(championList.getSelectedIndex());
-        });
+        championList.addActionListener(e -> setChampion(championList.getSelectedIndex()));
     }
 
     private void setChampion(int championIndex){
         currentChampion = sortedChampions.get(championIndex);
         generatedChampionName.setText(currentChampion.name);
+        String ICONS_PATH = "src/img/champion/Icons/";
         generatedChampionImage.setIcon(new ImageIcon(ICONS_PATH + currentChampion.image.full));
     }
 
