@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Random_Champion_Generator">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/Random_Champion_Generator.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
