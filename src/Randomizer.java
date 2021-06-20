@@ -48,9 +48,10 @@ public class Randomizer extends JFrame {
         marksmanCheckBox.addActionListener(e -> filterChampionsPerCheckbox(marksmanCheckBox));
         supportCheckBox.addActionListener(e -> filterChampionsPerCheckbox(supportCheckBox));
         tankCheckBox.addActionListener(e -> filterChampionsPerCheckbox(tankCheckBox));
-
+        championList.addActionListener(e -> setChampion(championList.getSelectedIndex()));
         generateAChampionButton.addActionListener(e -> {
             int randomIndex = randomChampionIndex();
+            if(randomIndex < 0) return;
             championList.setSelectedIndex(randomIndex);
             setChampion(randomIndex);
         });
@@ -62,10 +63,10 @@ public class Randomizer extends JFrame {
                 ioException.printStackTrace();
             }
         });
-        championList.addActionListener(e -> setChampion(championList.getSelectedIndex()));
     }
 
     private void setChampion(int championIndex){
+        if(championIndex < 0) return;
         currentChampion = sortedChampions.get(championIndex);
         generatedChampionName.setText(currentChampion.name);
         String ICONS_PATH = "src/img/champion/Icons/";
@@ -79,12 +80,16 @@ public class Randomizer extends JFrame {
             tags.remove(checkBox.getText());
         }
         sortedChampions = ChampionsFilter.FilteredChampionsByRole(champions, tags);
+        if(sortedChampions.size() < 1) {
+            clearChampion();
+            return;
+        };
         championList.setModel(new DefaultComboBoxModel<>(ChampionListToChampionNamesArrayConverter.ChampionNames(sortedChampions)));
-
         setChampion(0);
     }
 
     private int randomChampionIndex() {
+        if(sortedChampions.size() < 1) return -1;
         Random random = new Random();
         int tempRandom = random.nextInt(sortedChampions.size());
         while (newGeneratedChamp == tempRandom) {
@@ -93,6 +98,13 @@ public class Randomizer extends JFrame {
         }
         newGeneratedChamp = tempRandom;
         return newGeneratedChamp;
+    }
+
+    private void clearChampion(){
+        currentChampion = null;
+        championList.setModel(new DefaultComboBoxModel<String>());
+        generatedChampionImage.setIcon(null);
+        generatedChampionName.setText("No Result");
     }
 
     public Randomizer() {
