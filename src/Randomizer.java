@@ -32,6 +32,7 @@ public class Randomizer extends JFrame {
 
     private void populateStartingData() {
         championList.setModel(new DefaultComboBoxModel<>(ChampionListToChampionNamesArrayConverter.ChampionNames(sortedChampions)));
+        setChampion(0);
     }
 
     private void initActionListeners() {
@@ -89,6 +90,7 @@ public class Randomizer extends JFrame {
         Random random = new Random();
         int tempRandom = random.nextInt(sortedChampions.size());
         while (newGeneratedChamp == tempRandom) {
+            if(sortedChampions.size() == 1) break;
             tempRandom = random.nextInt(sortedChampions.size());
         }
         newGeneratedChamp = tempRandom;
