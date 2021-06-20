@@ -1,7 +1,4 @@
 package namegenerator;
-
-import java.util.Arrays;
-
 /**
  *
  * @author Falcuun
