@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LolChmapGenerator.iml" filepath="$PROJECT_DIR$/LolChmapGenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LolChampGenerator.iml" filepath="$PROJECT_DIR$/LolChampGenerator.iml" />
     </modules>
   </component>
 </project>
