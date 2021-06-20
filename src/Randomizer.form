@@ -21,17 +21,12 @@
           <text value="Choose Champion From the List"/>
         </properties>
       </component>
-      <component id="fe218" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+      <component id="fe218" class="javax.swing.JComboBox" binding="championList">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties/>
       </component>
-      <vspacer id="9a9ee">
-        <constraints>
-          <grid row="2" column="0" row-span="2" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </vspacer>
       <component id="da48b" class="javax.swing.JLabel">
         <constraints>
           <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -47,25 +42,25 @@
         </constraints>
         <properties>
           <background color="-196609"/>
-          <text value="Assassins"/>
+          <text value="Assassin"/>
         </properties>
       </component>
-      <component id="5edeb" class="javax.swing.JCheckBox" binding="fightersCheckBox" default-binding="true">
+      <component id="5edeb" class="javax.swing.JCheckBox" binding="fighterCheckBox" default-binding="true">
         <constraints>
           <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-394497"/>
-          <text value="Fighters"/>
+          <text value="Fighter"/>
         </properties>
       </component>
-      <component id="ed64e" class="javax.swing.JCheckBox" binding="magesCheckBox" default-binding="true">
+      <component id="ed64e" class="javax.swing.JCheckBox" binding="mageCheckBox" default-binding="true">
         <constraints>
           <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-393217"/>
-          <text value="Mages"/>
+          <text value="Mage"/>
         </properties>
       </component>
       <component id="8b924" class="javax.swing.JCheckBox" binding="marksmanCheckBox">
@@ -74,34 +69,29 @@
         </constraints>
         <properties>
           <background color="-394497"/>
-          <text value="Marskman"/>
+          <text value="Marksman"/>
         </properties>
       </component>
-      <component id="9f4b2" class="javax.swing.JCheckBox" binding="supportsCheckBox" default-binding="true">
+      <component id="9f4b2" class="javax.swing.JCheckBox" binding="supportCheckBox" default-binding="true">
         <constraints>
           <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-394497"/>
           <enabled value="true"/>
-          <text value="Supports"/>
+          <text value="Support"/>
         </properties>
       </component>
-      <component id="b7d11" class="javax.swing.JCheckBox" binding="tanksCheckBox" default-binding="true">
+      <component id="b7d11" class="javax.swing.JCheckBox" binding="tankCheckBox" default-binding="true">
         <constraints>
           <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-394497"/>
           <enabled value="true"/>
-          <text value="Tanks"/>
+          <text value="Tank"/>
         </properties>
       </component>
-      <vspacer id="ce15f">
-        <constraints>
-          <grid row="7" column="3" row-span="2" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </vspacer>
       <component id="fab7f" class="javax.swing.JButton" binding="showGuideButton" default-binding="true">
         <constraints>
           <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
@@ -141,7 +131,7 @@
       </component>
       <component id="9fa07" class="javax.swing.JLabel" binding="generatedChampionImage">
         <constraints>
-          <grid row="3" column="4" row-span="5" col-span="1" vsize-policy="2" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="4" row-span="6" col-span="1" vsize-policy="2" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value=""/>

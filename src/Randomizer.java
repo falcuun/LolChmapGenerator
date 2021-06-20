@@ -1,38 +1,103 @@
-import namegenerator.JSONParser;
+import namegenerator.Converters.ChampionListToChampionNamesArrayConverter;
+import namegenerator.Helpers.ChampionsFilter;
+import namegenerator.Helpers.JSONParser;
 import namegenerator.Models.Champion;
 
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Randomizer extends JFrame {
-    private JComboBox comboBox1;
+    private JComboBox<String> championList;
     private JButton showGuideButton;
     private JCheckBox assassinsCheckBox;
-    private JCheckBox fightersCheckBox;
-    private JCheckBox magesCheckBox;
+    private JCheckBox fighterCheckBox;
+    private JCheckBox mageCheckBox;
     private JCheckBox marksmanCheckBox;
-    private JCheckBox supportsCheckBox;
-    private JCheckBox tanksCheckBox;
+    private JCheckBox supportCheckBox;
+    private JCheckBox tankCheckBox;
     private JLabel generatedChampionName;
     private JButton generateAChampionButton;
     private JPanel randomizerPanel;
     private JLabel generatedChampionImage;
 
 
-    private String ICONS_PATH = "src/img/champion/Icons/";
+    private final String ICONS_PATH = "src/img/champion/Icons/";
 
-    ArrayList<Champion> champions = JSONParser.FromJsonToChampions();
-    ArrayList<Champion> sortedChampions;
+    private final ArrayList<Champion> champions = JSONParser.FromJsonToChampions();
+    private ArrayList<Champion> sortedChampions = champions;
+    private final ArrayList<String> tags = new ArrayList<>();
+    private int newGeneratedChamp;
 
-    public Randomizer() {
+    private void populateStartingData() {
+        championList.setModel(new DefaultComboBoxModel<>(ChampionListToChampionNamesArrayConverter.ChampionNames(sortedChampions)));
+    }
+
+    private void initActionListeners() {
+        assassinsCheckBox.addActionListener(e -> {
+            filterChampionsPerCheckbox(assassinsCheckBox);
+        });
+        fighterCheckBox.addActionListener(e -> {
+            filterChampionsPerCheckbox(fighterCheckBox);
+        });
+        mageCheckBox.addActionListener(e -> {
+            filterChampionsPerCheckbox(mageCheckBox);
+        });
+        marksmanCheckBox.addActionListener(e -> {
+            filterChampionsPerCheckbox(marksmanCheckBox);
+        });
+        supportCheckBox.addActionListener(e -> {
+            filterChampionsPerCheckbox(supportCheckBox);
+        });
+        tankCheckBox.addActionListener(e -> {
+            filterChampionsPerCheckbox(tankCheckBox);
+        });
+
         generateAChampionButton.addActionListener(e -> {
-            generatedChampionName.setText(champions.get(5).name);
-            generatedChampionImage.setIcon(new ImageIcon(ICONS_PATH+champions.get(5).image.full));
+            int randomIndex = randomChampionIndex();
+            championList.setSelectedIndex(randomIndex);
+            setChampion(randomIndex);
         });
         showGuideButton.addActionListener(e -> {
 
         });
+        championList.addActionListener(e ->{
+            setChampion(championList.getSelectedIndex());
+        });
+    }
+
+    private void setChampion(int championIndex){
+        Champion champion = sortedChampions.get(championIndex);
+        generatedChampionName.setText(champion.name);
+        generatedChampionImage.setIcon(new ImageIcon(ICONS_PATH + champion.image.full));
+    }
+
+    private void filterChampionsPerCheckbox(JCheckBox checkBox) {
+        if (checkBox.isSelected()) {
+            tags.add(checkBox.getText());
+        } else {
+            tags.remove(checkBox.getText());
+        }
+        sortedChampions = ChampionsFilter.FilteredChampionsByRole(champions, tags);
+        championList.setModel(new DefaultComboBoxModel<>(ChampionListToChampionNamesArrayConverter.ChampionNames(sortedChampions)));
+
+        setChampion(0);
+    }
+
+    private int randomChampionIndex() {
+        Random random = new Random();
+        int tempRandom = random.nextInt(sortedChampions.size());
+        while (newGeneratedChamp == tempRandom) {
+            tempRandom = random.nextInt(sortedChampions.size());
+        }
+        newGeneratedChamp = tempRandom;
+        return newGeneratedChamp;
+    }
+
+    public Randomizer() {
+        initActionListeners();
+        populateStartingData();
     }
 
     public static void main(String... args) {
