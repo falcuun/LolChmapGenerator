@@ -6,7 +6,7 @@ import namegenerator.Models.Champion;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
+import java.util.*;
 
 public class JSONParser {
 
@@ -24,6 +24,21 @@ public class JSONParser {
                 champions.add(gson.fromJson(data.get(o.toString()), Champion.class));
             }
             return champions;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public static Dictionary<String, String> FromJsonToChampionGuideLinks() {
+        String championsGuideJSON;
+        try {
+            championsGuideJSON = new String(Files.readAllBytes(Paths.get("championGuides.json")));
+            Gson gson = new Gson();
+            Dictionary<String, String> championGuides = new Hashtable<>();
+            JsonObject wholeJson = gson.fromJson(championsGuideJSON, JsonObject.class);
+            championGuides = gson.fromJson(wholeJson.get("data"), Hashtable.class);
+            return championGuides;
         } catch (IOException e) {
             e.printStackTrace();
             return null;

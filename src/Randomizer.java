@@ -5,7 +5,11 @@ import namegenerator.Models.Champion;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
+import java.util.Dictionary;
 import java.util.Random;
 
 public class Randomizer extends JFrame {
@@ -26,9 +30,13 @@ public class Randomizer extends JFrame {
     private final String ICONS_PATH = "src/img/champion/Icons/";
 
     private final ArrayList<Champion> champions = JSONParser.FromJsonToChampions();
+    private final Dictionary<String, String> guides = JSONParser.FromJsonToChampionGuideLinks();
     private ArrayList<Champion> sortedChampions = champions;
     private final ArrayList<String> tags = new ArrayList<>();
     private int newGeneratedChamp;
+    private Champion currentChampion;
+
+    private Desktop dt = Desktop.getDesktop();
 
     private void populateStartingData() {
         championList.setModel(new DefaultComboBoxModel<>(ChampionListToChampionNamesArrayConverter.ChampionNames(sortedChampions)));
@@ -61,7 +69,12 @@ public class Randomizer extends JFrame {
             setChampion(randomIndex);
         });
         showGuideButton.addActionListener(e -> {
-
+            var name = guides.get(currentChampion.name);
+            try {
+                dt.browse(new URI(name));
+            } catch (IOException | URISyntaxException ioException) {
+                ioException.printStackTrace();
+            }
         });
         championList.addActionListener(e ->{
             setChampion(championList.getSelectedIndex());
@@ -69,9 +82,9 @@ public class Randomizer extends JFrame {
     }
 
     private void setChampion(int championIndex){
-        Champion champion = sortedChampions.get(championIndex);
-        generatedChampionName.setText(champion.name);
-        generatedChampionImage.setIcon(new ImageIcon(ICONS_PATH + champion.image.full));
+        currentChampion = sortedChampions.get(championIndex);
+        generatedChampionName.setText(currentChampion.name);
+        generatedChampionImage.setIcon(new ImageIcon(ICONS_PATH + currentChampion.image.full));
     }
 
     private void filterChampionsPerCheckbox(JCheckBox checkBox) {
