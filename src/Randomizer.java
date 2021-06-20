@@ -56,6 +56,7 @@ public class Randomizer extends JFrame {
             setChampion(randomIndex);
         });
         showGuideButton.addActionListener(e -> {
+            if(currentChampion == null) return;
             var name = guides.get(currentChampion.name);
             try {
                 dt.browse(new URI(name));
